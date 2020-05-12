@@ -1,0 +1,15 @@
+.profile {
+  background-color: #f9a875;
+  border-radius: 15px;
+}
+
+.avatar {
+  max-width: 150px;
+}
+
+span {
+  font-family: "Fira Code";
+  font-size: 16pt;
+  font-weight: 700;
+  color: #fff6d3;
+}
