@@ -11,10 +11,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    // <Container fluid className="scanlines">
-    <Container fluid className="">
+    <Container fluid>
       <Row>
-        <Col lg={3}>
+        <Col md={4} lg={4}>
           <Profile />
         </Col>
         <Col lg={1}>

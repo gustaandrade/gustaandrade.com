@@ -1,15 +1,41 @@
 .profile {
-  background-color: #f9a875;
-  border-radius: 15px;
+  background-color: #eb6b6f;
+  border-radius: 0 0 100% 0;
+  width: 500px;
+  height: 400px;
+  padding: 20px 120px 120px 20px;
+}
+
+.profile .title {
+  background-color: #f9a875 !important;
+  border: 4px solid black;
 }
 
 .avatar {
-  max-width: 150px;
+  background-color: #f9a875 !important;
+  max-width: 121px;
+  border: 4px solid black;
 }
 
 span {
   font-family: "Fira Code";
-  font-size: 16pt;
+  font-size: 12pt;
   font-weight: 700;
-  color: #fff6d3;
+  color: black;
+}
+
+.social-text {
+  font-family: "Fira Code";
+  font-size: 12pt;
+  font-weight: 700;
+  color: black;
+}
+
+.profile-title {
+  font-size: 11pt;
+  text-align: center;
+}
+
+.profile-subtitle {
+  font-size: 8pt;
 }
