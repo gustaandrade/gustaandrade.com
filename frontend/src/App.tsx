@@ -6,9 +6,11 @@ import Profile from "./components/Profile";
 import I18n from "./components/I18n";
 
 import Palettes, { Palette4H } from "./themes";
+import { Container } from "./styles";
+
+import { getRandomIntBetween } from "./helpers/random";
 
 import "./App.css";
-import { getRandomIntBetween } from "./helpers/random";
 
 function App() {
   const [randomTheme, setRandomTheme] = useState(Palette4H);
@@ -22,10 +24,10 @@ function App() {
 
   return (
     <ThemeProvider theme={randomTheme ? randomTheme : Palette4H}>
-      <div className="container">
+      <Container>
         <Profile />
         <I18n />
-      </div>
+      </Container>
     </ThemeProvider>
   );
 }

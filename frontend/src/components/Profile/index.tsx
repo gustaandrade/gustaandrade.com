@@ -7,8 +7,6 @@ import Avatar from "../../assets/avatar.png";
 
 import { LanguageItems } from "../../resources/enums";
 
-import "./styles.css";
-
 const Profile = () => {
   const [t, i18n] = useTranslation();
 
