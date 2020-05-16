@@ -1,26 +1,32 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { useState, useEffect } from "react";
+import Enumerable from "linq";
+import { ThemeProvider } from "styled-components";
 
 import Profile from "./components/Profile";
 import I18n from "./components/I18n";
 
+import Palettes, { Palette4H } from "./themes";
+
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { getRandomIntBetween } from "./helpers/random";
 
 function App() {
+  const [randomTheme, setRandomTheme] = useState(Palette4H);
+  useEffect(() => {
+    setRandomTheme(
+      Enumerable.from(Palettes).firstOrDefault(
+        p => p.value === getRandomIntBetween(0, Palettes.length)
+      )
+    );
+  }, []);
+
   return (
-    <Container fluid>
-      <Row>
-        <Col md={4} lg={4}>
-          <Profile />
-        </Col>
-        <Col lg={1}>
-          <I18n />
-        </Col>
-      </Row>
-    </Container>
+    <ThemeProvider theme={randomTheme ? randomTheme : Palette4H}>
+      <div className="container">
+        <Profile />
+        <I18n />
+      </div>
+    </ThemeProvider>
   );
 }
 
