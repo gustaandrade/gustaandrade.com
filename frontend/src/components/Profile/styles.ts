@@ -21,7 +21,7 @@ export const ProfileArea = styled.div`
 export const AvatarArea = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 
   width: 90%;
@@ -53,6 +53,8 @@ export const SocialColumn = styled.div`
 
 export const AvatarImage = styled.img`
   width: 100px;
+
+  margin-right: 10px;
 `;
 
 export const ProfileName = styled.span`
