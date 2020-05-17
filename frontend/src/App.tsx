@@ -2,26 +2,29 @@ import React, { useState, useEffect } from "react";
 import Enumerable from "linq";
 import { ThemeProvider } from "styled-components";
 
-import Profile from "./components/Profile";
-import I18n from "./components/I18n";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
-import Palettes, { Palette4H } from "./themes";
+import Palettes from "./themes";
 import { Container } from "./resources/styles";
 
 import { getRandomIntBetween } from "./helpers/random";
 
 import "./App.css";
+import { Palette } from "./themes/types";
 
 function App() {
   const startPalette = Enumerable.from(Palettes).shuffle().toArray()[0];
   const [randomTheme, setRandomTheme] = useState(startPalette);
 
-  const shuffleNewTheme = () => {
+  const shuffleNewTheme = (theme?: Palette) => {
     setRandomTheme(
       Enumerable.from(Palettes)
         .shuffle()
-        .firstOrDefault(
-          p => p.value === getRandomIntBetween(0, Palettes.length)
+        .firstOrDefault(p =>
+          theme
+            ? p.value === theme.value
+            : p.value === getRandomIntBetween(0, Palettes.length)
         )
     );
   };
@@ -31,8 +34,11 @@ function App() {
   return (
     <ThemeProvider theme={randomTheme ? randomTheme : startPalette}>
       <Container>
-        <Profile />
-        <I18n shuffleTheme={shuffleNewTheme} />
+        <Header
+          currentPalette={randomTheme ? randomTheme : startPalette}
+          shuffleTheme={shuffleNewTheme}
+        />
+        <Body />
       </Container>
     </ThemeProvider>
   );

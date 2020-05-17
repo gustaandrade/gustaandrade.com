@@ -1,4 +1,7 @@
-export const Palette1A = {
+import { Palette } from "./types";
+
+export const Palette1A: Palette = {
+  name: "1-A",
   value: 0,
   Color1: "#f8e8c8",
   Color2: "#d89048",
@@ -7,7 +10,8 @@ export const Palette1A = {
   TextColor: "#000000"
 };
 
-export const Palette1B = {
+export const Palette1B: Palette = {
+  name: "1-B",
   value: 1,
   Color1: "#d8d8c0",
   Color2: "#c8b070",
@@ -16,7 +20,8 @@ export const Palette1B = {
   TextColor: "#000000"
 };
 
-export const Palette1C = {
+export const Palette1C: Palette = {
+  name: "1-C",
   value: 2,
   Color1: "#f8c0f8",
   Color2: "#e89850",
@@ -25,7 +30,8 @@ export const Palette1C = {
   TextColor: "#000000"
 };
 
-export const Palette1D = {
+export const Palette1D: Palette = {
+  name: "1-D",
   value: 3,
   Color1: "#f8f8a8",
   Color2: "#c08048",
@@ -34,7 +40,8 @@ export const Palette1D = {
   TextColor: "#000000"
 };
 
-export const Palette1E = {
+export const Palette1E: Palette = {
+  name: "1-E",
   value: 4,
   Color1: "#f8d8b0",
   Color2: "#78c078",
@@ -43,7 +50,8 @@ export const Palette1E = {
   TextColor: "#000000"
 };
 
-export const Palette1F = {
+export const Palette1F: Palette = {
+  name: "1-F",
   value: 5,
   Color1: "#d8e8f8",
   Color2: "#e08850",
@@ -52,7 +60,8 @@ export const Palette1F = {
   TextColor: "#000000"
 };
 
-export const Palette1G = {
+export const Palette1G: Palette = {
+  name: "1-G",
   value: 6,
   Color1: "#000050",
   Color2: "#00a0e8",
@@ -61,7 +70,8 @@ export const Palette1G = {
   TextColor: "#000000"
 };
 
-export const Palette1H = {
+export const Palette1H: Palette = {
+  name: "1-H",
   value: 7,
   Color1: "#f8e8e0",
   Color2: "#f8b888",
@@ -70,7 +80,8 @@ export const Palette1H = {
   TextColor: "#000000"
 };
 
-export const Palette2A = {
+export const Palette2A: Palette = {
+  name: "2-A",
   value: 8,
   Color1: "#f0c8a0",
   Color2: "#c08848",
@@ -79,7 +90,8 @@ export const Palette2A = {
   TextColor: "#000000"
 };
 
-export const Palette2B = {
+export const Palette2B: Palette = {
+  name: "2-B",
   value: 9,
   Color1: "#f8f8f8",
   Color2: "#f8e850",
@@ -88,7 +100,8 @@ export const Palette2B = {
   TextColor: "#000000"
 };
 
-export const Palette2C = {
+export const Palette2C: Palette = {
+  name: "2-C",
   value: 10,
   Color1: "#f8c0f8",
   Color2: "#e88888",
@@ -97,7 +110,8 @@ export const Palette2C = {
   TextColor: "#000000"
 };
 
-export const Palette2D = {
+export const Palette2D: Palette = {
+  name: "2-D",
   value: 11,
   Color1: "#f8f8a0",
   Color2: "#00f800",
@@ -106,7 +120,8 @@ export const Palette2D = {
   TextColor: "#000000"
 };
 
-export const Palette2E = {
+export const Palette2E: Palette = {
+  name: "2-E",
   value: 12,
   Color1: "#f8c880",
   Color2: "#90b0e0",
@@ -115,7 +130,8 @@ export const Palette2E = {
   TextColor: "#000000"
 };
 
-export const Palette2F = {
+export const Palette2F: Palette = {
+  name: "2-F",
   value: 13,
   Color1: "#d0f8f8",
   Color2: "#f89050",
@@ -124,7 +140,8 @@ export const Palette2F = {
   TextColor: "#000000"
 };
 
-export const Palette2G = {
+export const Palette2G: Palette = {
+  name: "2-G",
   value: 14,
   Color1: "#68b838",
   Color2: "#e05040",
@@ -133,7 +150,8 @@ export const Palette2G = {
   TextColor: "#000000"
 };
 
-export const Palette2H = {
+export const Palette2H: Palette = {
+  name: "2-H",
   value: 15,
   Color1: "#f8f8f8",
   Color2: "#b8b8b8",
@@ -142,7 +160,8 @@ export const Palette2H = {
   TextColor: "#000000"
 };
 
-export const Palette3A = {
+export const Palette3A: Palette = {
+  name: "3-A",
   value: 16,
   Color1: "#f8d098",
   Color2: "#70c0c0",
@@ -151,7 +170,8 @@ export const Palette3A = {
   TextColor: "#000000"
 };
 
-export const Palette3B = {
+export const Palette3B: Palette = {
+  name: "3-B",
   value: 17,
   Color1: "#d8d8c0",
   Color2: "#e08020",
@@ -160,7 +180,8 @@ export const Palette3B = {
   TextColor: "#000000"
 };
 
-export const Palette3C = {
+export const Palette3C: Palette = {
+  name: "3-C",
   value: 18,
   Color1: "#e0a8c8",
   Color2: "#f8f878",
@@ -169,7 +190,8 @@ export const Palette3C = {
   TextColor: "#000000"
 };
 
-export const Palette3D = {
+export const Palette3D: Palette = {
+  name: "3-D",
   value: 19,
   Color1: "#f0f8b8",
   Color2: "#e0a878",
@@ -178,7 +200,8 @@ export const Palette3D = {
   TextColor: "#000000"
 };
 
-export const Palette3E = {
+export const Palette3E: Palette = {
+  name: "3-E",
   value: 20,
   Color1: "#f8f8c0",
   Color2: "#e0b068",
@@ -187,7 +210,8 @@ export const Palette3E = {
   TextColor: "#000000"
 };
 
-export const Palette3F = {
+export const Palette3F: Palette = {
+  name: "3-F",
   value: 21,
   Color1: "#7878c8",
   Color2: "#f868f8",
@@ -196,7 +220,8 @@ export const Palette3F = {
   TextColor: "#000000"
 };
 
-export const Palette3G = {
+export const Palette3G: Palette = {
+  name: "3-G",
   value: 22,
   Color1: "#f8f8f8",
   Color2: "#60d850",
@@ -205,7 +230,8 @@ export const Palette3G = {
   TextColor: "#000000"
 };
 
-export const Palette3H = {
+export const Palette3H: Palette = {
+  name: "3-H",
   value: 23,
   Color1: "#e0f8a0",
   Color2: "#78c838",
@@ -214,7 +240,8 @@ export const Palette3H = {
   TextColor: "#000000"
 };
 
-export const Palette4A = {
+export const Palette4A: Palette = {
+  name: "4-A",
   value: 24,
   Color1: "#f0a868",
   Color2: "#78a8f8",
@@ -223,7 +250,8 @@ export const Palette4A = {
   TextColor: "#000000"
 };
 
-export const Palette4B = {
+export const Palette4B: Palette = {
+  name: "4-B",
   value: 25,
   Color1: "#f0e8f0",
   Color2: "#e8a060",
@@ -232,7 +260,8 @@ export const Palette4B = {
   TextColor: "#000000"
 };
 
-export const Palette4C = {
+export const Palette4C: Palette = {
+  name: "4-C",
   value: 26,
   Color1: "#f8e0e0",
   Color2: "#d8a0d0",
@@ -241,7 +270,8 @@ export const Palette4C = {
   TextColor: "#000000"
 };
 
-export const Palette4D = {
+export const Palette4D: Palette = {
+  name: "4-D",
   value: 27,
   Color1: "#f8f8b8",
   Color2: "#90c8c8",
@@ -250,7 +280,8 @@ export const Palette4D = {
   TextColor: "#000000"
 };
 
-export const Palette4E = {
+export const Palette4E: Palette = {
+  name: "4-E",
   value: 28,
   Color1: "#f8d8a8",
   Color2: "#e0a878",
@@ -259,7 +290,8 @@ export const Palette4E = {
   TextColor: "#000000"
 };
 
-export const Palette4F = {
+export const Palette4F: Palette = {
+  name: "4-F",
   value: 29,
   Color1: "#b8d0d0",
   Color2: "#d880d8",
@@ -268,7 +300,8 @@ export const Palette4F = {
   TextColor: "#000000"
 };
 
-export const Palette4G = {
+export const Palette4G: Palette = {
+  name: "4-G",
   value: 30,
   Color1: "#b0e018",
   Color2: "#b82058",
@@ -277,7 +310,8 @@ export const Palette4G = {
   TextColor: "#000000"
 };
 
-export const Palette4H = {
+export const Palette4H: Palette = {
+  name: "4-H",
   value: 31,
   Color1: "#f8f8c8",
   Color2: "#b8c058",

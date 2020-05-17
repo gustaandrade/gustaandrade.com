@@ -10,13 +10,21 @@ export function generateRandomBlob(location?: BlobLocation) {
   for (let j = 0; j < 4; j++) minusPercentages.push(100 - plusPercentages[j]);
 
   switch (location) {
+    case BlobLocation.topLeft:
+      plusPercentages[0] = 0;
+      minusPercentages[0] = 10;
+      minusPercentages[2] = 10;
+      break;
+
     case BlobLocation.top:
       plusPercentages[0] = 10;
       minusPercentages[0] = 10;
       break;
+
     case BlobLocation.topRight:
-      plusPercentages[0] = plusPercentages[0] - 25;
+      plusPercentages[0] = 10;
       minusPercentages[0] = 0;
+      minusPercentages[3] = 10;
       break;
   }
 
