@@ -6,17 +6,24 @@ import { Container, Button } from "./styles";
 
 import { generateRandomBlob } from "../../helpers/blob";
 
-import { Language } from "../../resources/enums";
+import { Language, BlobLocation } from "../../resources/enums";
 
-const I18n = () => {
+import { I18nProps } from "../../i18n/types";
+
+const I18n: React.FC<I18nProps> = props => {
   const [t, i18n] = useTranslation();
 
+  function toggleLanguage(language: Language) {
+    i18n.changeLanguage(language);
+    props.shuffleTheme();
+  }
+
   return (
-    <Container className={generateRandomBlob()}>
-      <Button onClick={() => i18n.changeLanguage(Language.br)}>
+    <Container className={generateRandomBlob(BlobLocation.topRight)}>
+      <Button onClick={() => toggleLanguage(Language.br)}>
         <Emoji text=":flag_brazil:" onlyEmojiClassName="make-emojis-large" />
       </Button>
-      <Button onClick={() => i18n.changeLanguage(Language.en)}>
+      <Button onClick={() => toggleLanguage(Language.en)}>
         <Emoji
           text=":flag_united_states:"
           onlyEmojiClassName="make-emojis-large"

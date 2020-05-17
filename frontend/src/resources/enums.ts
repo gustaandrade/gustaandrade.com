@@ -4,5 +4,11 @@ export enum Language {
 }
 
 export enum LanguageItems {
-  Role = "Role"
+  Role = "Role",
+  Specialties = "Specialties"
+}
+
+export enum BlobLocation {
+  top = 2,
+  topRight = 3
 }

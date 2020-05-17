@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: 0;
+  right: 0;
 
-  width: 180px;
-  height: 120px;
-
-  padding-right: 10px;
+  width: 150px;
+  height: 75px;
 
   background-color: ${props => props.theme.Color2};
   border-radius: ${props => props.className};
@@ -23,6 +21,8 @@ export const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   border: 0;
+
+  margin: 0 2px 10px;
 
   font-size: 24pt;
 `;

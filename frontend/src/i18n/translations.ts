@@ -1,12 +1,14 @@
 const Translations = {
   br: {
     translation: {
-      Role: "Desenvolvedor Unity"
+      Role: "Desenvolvedor Full Stack e de Jogos",
+      Specialties: "Especialidades"
     }
   },
   en: {
     translation: {
-      Role: "Unity Developer"
+      Role: "Full Stack & Game Developer",
+      Specialties: "Specialties"
     }
   }
 };
