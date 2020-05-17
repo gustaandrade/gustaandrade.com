@@ -4,8 +4,8 @@ export enum Language {
 }
 
 export enum LanguageItems {
-  WebRole = "WebRole",
-  GameRole = "GameRole",
+  Role = "Role",
+  Curriculum = "Curriculum",
   Specialties = "Specialties",
   CurrentPalette = "CurrentPalette",
   ChangePalette = "ChangePalette"
@@ -14,5 +14,6 @@ export enum LanguageItems {
 export enum BlobLocation {
   topLeft = 1,
   top = 2,
-  topRight = 3
+  topRight = 3,
+  middle = 4
 }

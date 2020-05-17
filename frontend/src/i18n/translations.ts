@@ -1,8 +1,8 @@
 const Translations = {
   br: {
     translation: {
-      WebRole: "Desenvolvedor Full Stack",
-      GameRole: "Desenvolvedor de Jogos",
+      Role: "Desenvolvedor Full Stack & de Jogos",
+      Curriculum: "Currículo",
       Specialties: "Especialidades",
       CurrentPalette: "Paleta atual",
       ChangePalette: "Mudar paleta"
@@ -10,8 +10,8 @@ const Translations = {
   },
   en: {
     translation: {
-      WebRole: "Full Stack Developer",
-      GameRole: "Game Developer",
+      Role: "Full Stack & Game Developer",
+      Curriculum: "Resume",
       Specialties: "Specialties",
       CurrentPalette: "Current palette",
       ChangePalette: "Change palette"

@@ -10,7 +10,7 @@ export const Container = styled.div`
   padding: 20px 10px;
 
   background-color: ${props => props.theme.Color2};
-  border-radius: ${props => props.className};
+  border-radius: ${props => props.about};
 `;
 
 export const I18nContainer = styled.div`
