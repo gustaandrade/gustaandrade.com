@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Emoji from "react-emoji-render";
 import { useTranslation } from "react-i18next";
 
@@ -23,9 +23,13 @@ import { Palette } from "../../themes/types";
 
 const I18n: React.FC<I18nProps> = props => {
   const [t, i18n] = useTranslation();
+  const [language, setLanguage] = useState(Language.br);
 
-  function toggleLanguage(language: Language) {
-    i18n.changeLanguage(language);
+  function toggleLanguage(newLang: Language) {
+    if (language === newLang) return;
+
+    setLanguage(newLang);
+    i18n.changeLanguage(newLang);
     props.shuffleTheme();
   }
 

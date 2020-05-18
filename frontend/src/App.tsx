@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 
 import Palettes from "./themes";
-import { Container } from "./resources/styles";
+import { Container, GlobalStyle } from "./resources/styles";
 
 import { getRandomIntBetween } from "./helpers/random";
 
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <ThemeProvider theme={randomTheme ? randomTheme : startPalette}>
+      <GlobalStyle theme={randomTheme ? randomTheme : startPalette} />
       <Container>
         <Header
           currentPalette={randomTheme ? randomTheme : startPalette}

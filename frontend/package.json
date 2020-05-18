@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "i18next": "^19.4.4",
+    "interweave": "^12.5.0",
     "linq": "^3.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
