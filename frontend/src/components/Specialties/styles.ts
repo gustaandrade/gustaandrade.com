@@ -2,20 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-`;
-
-export const ProfileArea = styled.div`
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   min-width: 400px;
-  padding-top: 20px;
+  padding: 0 0 20px 0;
 
   background-color: ${props => props.theme.Color2};
   border-radius: ${props => props.about};
+
+  @media only screen and (max-width: 1075px) {
+    border-radius: ${props => props.slot};
+  }
+
+  @media only screen and (max-width: 614px) {
+    height: 200px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const LanguageArea = styled.div`
@@ -29,7 +33,7 @@ export const LanguageArea = styled.div`
   margin-top: 1rem;
 `;
 
-export const ProfileSpecialties = styled.span`
+export const SpecialtiesText = styled.span`
   font-family: "Jost";
   font-size: 11pt;
   font-weight: 500;

@@ -23,11 +23,14 @@ import { generateRandomBlob } from "../../helpers/blob";
 import { LanguageItems, BlobLocation } from "../../resources/enums";
 
 const Profile: React.FC = () => {
-  const [t, i18n] = useTranslation();
+  const [t] = useTranslation();
 
   return (
     <Container>
-      <ProfileArea about={generateRandomBlob(BlobLocation.topLeft)}>
+      <ProfileArea
+        slot={generateRandomBlob(BlobLocation.top)}
+        about={generateRandomBlob(BlobLocation.topLeft)}
+      >
         <AvatarArea>
           <AvatarImage src={Avatar} alt="Avatar" />
 

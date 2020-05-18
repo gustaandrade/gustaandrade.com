@@ -19,10 +19,10 @@ export enum LanguageItems {
 }
 
 export enum BlobLocation {
-  topLeft = 1,
-  top = 2,
-  topRight = 3,
-  middle = 4
+  topLeft = "topLeft",
+  top = "top",
+  topRight = "topRight",
+  middle = "middle"
 }
 
 export enum PillIcon {

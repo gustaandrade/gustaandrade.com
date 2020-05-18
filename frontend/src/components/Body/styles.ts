@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
 
   margin-bottom: 2rem;
+  margin: 0 10px;
 `;
 
 export const PillsArea = styled.div`

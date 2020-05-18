@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 1075px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProfileArea = styled.div`
@@ -16,6 +21,16 @@ export const ProfileArea = styled.div`
 
   background-color: ${props => props.theme.Color2};
   border-radius: ${props => props.about};
+
+  @media only screen and (max-width: 1075px) {
+    border-radius: ${props => props.slot};
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 614px) {
+    min-width: 300px;
+    height: 200px;
+  }
 `;
 
 export const AvatarArea = styled.div`

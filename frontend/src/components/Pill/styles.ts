@@ -8,6 +8,14 @@ export const Container = styled.div`
   margin: 10px 5px;
 
   width: 30%;
+
+  @media only screen and (max-width: 1300px) {
+    width: 44%;
+  }
+
+  @media only screen and (max-width: 710px) {
+    width: 100%;
+  }
 `;
 
 export const TitleArea = styled.div`
@@ -36,9 +44,9 @@ export const PillTitle = styled.a`
   text-decoration: none;
 `;
 
-export const PillDescription = styled.p`
+export const PillDescription = styled.div`
   font-family: "Open Sans";
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
 `;

@@ -38,7 +38,10 @@ const I18n: React.FC<I18nProps> = props => {
   }
 
   return (
-    <Container about={generateRandomBlob(BlobLocation.topRight)}>
+    <Container
+      slot={generateRandomBlob(BlobLocation.middle)}
+      about={generateRandomBlob(BlobLocation.topRight)}
+    >
       <I18nContainer>
         <Button onClick={() => toggleLanguage(Language.br)}>
           <Emoji text=":flag_brazil:" onlyEmojiClassName="make-emojis-large" />

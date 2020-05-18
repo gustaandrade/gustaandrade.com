@@ -11,6 +11,12 @@ export const Container = styled.div`
 
   background-color: ${props => props.theme.Color2};
   border-radius: ${props => props.about};
+
+  @media only screen and (max-width: 1075px) {
+    border-radius: ${props => props.slot};
+
+    padding: 25px;
+  }
 `;
 
 export const I18nContainer = styled.div`

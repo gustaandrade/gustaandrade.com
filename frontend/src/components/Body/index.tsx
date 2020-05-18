@@ -8,7 +8,7 @@ import { Container, PillsArea, RecentProjects } from "./styles";
 import { LanguageItems, PillIcon } from "../../resources/enums";
 
 const Body: React.FC = () => {
-  const [t, i18n] = useTranslation();
+  const [t] = useTranslation();
 
   return (
     <Container>
