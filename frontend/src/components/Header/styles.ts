@@ -14,6 +14,13 @@ export const Container = styled.div`
     height: 500px;
   }
 
+  @media only screen and (max-width: 784px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    height: 600px;
+  }
+
   @media only screen and (max-width: 614px) {
     flex-wrap: wrap;
     justify-content: space-evenly;

@@ -16,19 +16,27 @@ import { Palette } from "./themes/types";
 function App() {
   const startPalette = Enumerable.from(Palettes)
     .shuffle()
-    .firstOrDefault(p => !p.Banished);
+    .where(p => !p.Banished)
+    .toArray()[0];
   const [randomTheme, setRandomTheme] = useState(startPalette);
 
   const shuffleNewTheme = (theme?: Palette) => {
-    setRandomTheme(
-      Enumerable.from(Palettes)
-        .shuffle()
-        .firstOrDefault(p =>
-          theme
-            ? p.value === theme.value
-            : p.value === getRandomIntBetween(0, Palettes.length)
-        )
-    );
+    if (theme) {
+      setRandomTheme(
+        Enumerable.from(Palettes)
+          .shuffle()
+          .firstOrDefault(p => p.value === theme.value)
+      );
+    } else {
+      setRandomTheme(
+        Enumerable.from(Palettes)
+          .shuffle()
+          .where(p => !p.Banished)
+          .firstOrDefault(
+            p => p.value === getRandomIntBetween(0, Palettes.length)
+          )
+      );
+    }
   };
 
   useEffect(() => shuffleNewTheme(), []);

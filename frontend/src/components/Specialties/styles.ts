@@ -14,11 +14,11 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 1075px) {
     border-radius: ${props => props.slot};
+    margin: 20px 0;
   }
 
-  @media only screen and (max-width: 614px) {
-    height: 200px;
-    margin-bottom: 20px;
+  @media only screen and (max-width: 784px) {
+    margin: 20px 0;
   }
 `;
 
@@ -41,7 +41,7 @@ export const IconArea = styled.div`
 
 export const SpecialtiesText = styled.span`
   font-family: "Jost";
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
 `;

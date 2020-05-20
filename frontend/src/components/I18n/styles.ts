@@ -13,9 +13,16 @@ export const Container = styled.div`
   border-radius: ${props => props.about};
 
   @media only screen and (max-width: 1075px) {
+    flex-direction: row;
+
     border-radius: ${props => props.slot};
 
-    padding: 25px;
+    min-width: 350px;
+    margin: 20px 0;
+  }
+
+  @media only screen and (max-width: 614px) {
+    margin: 0;
   }
 `;
 
@@ -45,7 +52,7 @@ export const Button = styled.button`
 
 export const PaletteText = styled.span`
   font-family: "Jost";
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
 `;
