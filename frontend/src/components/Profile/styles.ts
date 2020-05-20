@@ -9,7 +9,7 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 614px) {
-    height: 200px;
+    height: 225px;
   }
 `;
 
@@ -31,8 +31,8 @@ export const ProfileArea = styled.div`
   }
 
   @media only screen and (max-width: 614px) {
+    padding: 15px 0;
     min-width: 200px;
-    height: 210px;
   }
 `;
 

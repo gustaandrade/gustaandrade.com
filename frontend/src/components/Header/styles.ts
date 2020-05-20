@@ -24,7 +24,8 @@ export const Container = styled.div`
   @media only screen and (max-width: 614px) {
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: flex-start;
 
-    height: 700px;
+    height: 600px;
   }
 `;
