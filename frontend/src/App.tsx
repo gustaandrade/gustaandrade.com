@@ -14,7 +14,9 @@ import "./App.css";
 import { Palette } from "./themes/types";
 
 function App() {
-  const startPalette = Enumerable.from(Palettes).shuffle().toArray()[0];
+  const startPalette = Enumerable.from(Palettes)
+    .shuffle()
+    .firstOrDefault(p => !p.Banished);
   const [randomTheme, setRandomTheme] = useState(startPalette);
 
   const shuffleNewTheme = (theme?: Palette) => {

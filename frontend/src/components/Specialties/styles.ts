@@ -33,6 +33,12 @@ export const LanguageArea = styled.div`
   margin-top: 1rem;
 `;
 
+export const IconArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const SpecialtiesText = styled.span`
   font-family: "Jost";
   font-size: 11pt;
@@ -45,4 +51,13 @@ export const LanguageIcon = styled.svg`
   height: 48px;
 
   fill: ${props => props.theme.Color3};
+`;
+
+export const LanguageDescription = styled.span`
+  font-family: "Open Sans";
+  font-size: 8pt;
+  font-weight: 500;
+  color: ${props => props.theme.Color4};
+
+  padding: 2px 0;
 `;

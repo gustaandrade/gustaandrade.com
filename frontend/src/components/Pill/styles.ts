@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.a`
   background-color: ${props => props.theme.Color2};
   border-radius: 20px;
 
@@ -8,6 +8,8 @@ export const Container = styled.div`
   margin: 10px 5px;
 
   width: 30%;
+
+  text-decoration: none;
 
   @media only screen and (max-width: 1300px) {
     width: 44%;
@@ -35,7 +37,7 @@ export const PillImage = styled.svg`
   fill: ${props => props.theme.Color3};
 `;
 
-export const PillTitle = styled.a`
+export const PillTitle = styled.span`
   font-family: "Jost";
   font-size: 14pt;
   font-weight: 700;

@@ -29,5 +29,6 @@ export enum PillIcon {
   npm = "npm",
   unity = "unity",
   react = "react",
-  mobile = "mobile"
+  mobile = "mobile",
+  github = "github"
 }

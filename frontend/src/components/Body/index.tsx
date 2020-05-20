@@ -23,7 +23,7 @@ const Body: React.FC = () => {
         <Pill
           title="gamedev4noobs"
           url="https://github.com/gustaandrade/gamedev4noobs"
-          icon={PillIcon.unity}
+          icon={PillIcon.github}
           description={t(LanguageItems.SecondProject)}
         />
         <Pill

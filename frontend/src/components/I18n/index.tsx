@@ -61,7 +61,13 @@ const I18n: React.FC<I18nProps> = props => {
 
       <PaletteContainer>
         <PaletteText>{t(LanguageItems.ChangePalette)}</PaletteText>
-        <PaletteSelect onChange={e => changePalette(e?.target.value)}>
+        <PaletteSelect
+          value={-1}
+          onChange={e => changePalette(e?.target.value)}
+        >
+          <PaletteSelectOption key={-1} value={-1}>
+            ?-?
+          </PaletteSelectOption>
           {Palettes.map((p: Palette) => (
             <PaletteSelectOption key={p.value} value={p.value}>
               {p.name}
