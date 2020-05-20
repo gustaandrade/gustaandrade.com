@@ -19,6 +19,12 @@ export function generateRandomBlob(location?: BlobLocation) {
     case BlobLocation.top:
       plusPercentages[0] = 10;
       minusPercentages[0] = 10;
+      plusPercentages[1] =
+        plusPercentages[1] > 40 ? plusPercentages[1] - 30 : plusPercentages[1];
+      minusPercentages[1] =
+        minusPercentages[1] > 40
+          ? minusPercentages[1] - 30
+          : minusPercentages[1];
       break;
 
     case BlobLocation.topRight:

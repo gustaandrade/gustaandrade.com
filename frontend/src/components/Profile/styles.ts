@@ -7,6 +7,10 @@ export const Container = styled.div`
   @media only screen and (max-width: 1075px) {
     width: 100%;
   }
+
+  @media only screen and (max-width: 614px) {
+    height: 200px;
+  }
 `;
 
 export const ProfileArea = styled.div`
@@ -27,8 +31,8 @@ export const ProfileArea = styled.div`
   }
 
   @media only screen and (max-width: 614px) {
-    min-width: 300px;
-    height: 200px;
+    min-width: 200px;
+    height: 210px;
   }
 `;
 
@@ -55,6 +59,14 @@ export const SocialArea = styled.div`
   width: 90%;
 
   margin-top: 10px;
+
+  @media only screen and (max-width: 614px) {
+    width: 100%;
+    justify-content: center;
+
+    min-width: 200px;
+    height: 300px;
+  }
 `;
 
 export const SocialColumn = styled.div`
@@ -76,6 +88,10 @@ export const ProfileName = styled.span`
   font-size: 18pt;
   font-weight: 700;
   color: ${props => props.theme.Color4};
+
+  @media only screen and (max-width: 614px) {
+    font-size: 16pt;
+  }
 `;
 
 export const ProfileUsername = styled.span`
@@ -83,6 +99,10 @@ export const ProfileUsername = styled.span`
   font-size: 16pt;
   font-weight: 700;
   color: ${props => props.theme.Color3};
+
+  @media only screen and (max-width: 614px) {
+    font-size: 14pt;
+  }
 `;
 
 export const ProfileOccupation = styled.span`
@@ -90,6 +110,10 @@ export const ProfileOccupation = styled.span`
   font-size: 11pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
+
+  @media only screen and (max-width: 614px) {
+    font-size: 10pt;
+  }
 `;
 
 export const SocialIcon = styled.svg`
@@ -113,4 +137,9 @@ export const SocialLink = styled.a`
   text-decoration: none;
 
   margin: 2.5px 0;
+
+  @media only screen and (max-width: 614px) {
+    font-size: 10pt;
+    font-weight: 500;
+  }
 `;

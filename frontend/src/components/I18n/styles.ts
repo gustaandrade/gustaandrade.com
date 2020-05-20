@@ -21,8 +21,9 @@ export const Container = styled.div`
     margin: 20px 0;
   }
 
-  @media only screen and (max-width: 614px) {
+  @media only screen and (max-width: 784px) {
     margin: 0;
+    padding: 20px;
   }
 `;
 
@@ -55,6 +56,10 @@ export const PaletteText = styled.span`
   font-size: 12pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
+
+  @media only screen and (max-width: 614px) {
+    font-size: 11pt;
+  }
 `;
 
 export const PaletteItem = styled.span`

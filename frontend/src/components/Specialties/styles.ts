@@ -19,6 +19,7 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 784px) {
     margin: 20px 0;
+    padding: 20px;
   }
 `;
 
@@ -44,6 +45,10 @@ export const SpecialtiesText = styled.span`
   font-size: 12pt;
   font-weight: 500;
   color: ${props => props.theme.Color4};
+
+  @media only screen and (max-width: 614px) {
+    font-size: 11pt;
+  }
 `;
 
 export const LanguageIcon = styled.svg`

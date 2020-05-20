@@ -6,8 +6,11 @@ export const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  margin-bottom: 2rem;
-  margin: 0 10px;
+  margin: 0 10px 25px 10px;
+
+  @media only screen and (max-width: 614px) {
+    margin: 0 25px 25px 25px;
+  }
 `;
 
 export const PillsArea = styled.div`
