@@ -7,7 +7,6 @@ export const Palette1A: Palette = {
   Color2: "#d89048",
   Color3: "#a82820",
   Color4: "#301850",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -18,7 +17,6 @@ export const Palette1B: Palette = {
   Color2: "#c8b070",
   Color3: "#b05010",
   Color4: "#000000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -29,7 +27,6 @@ export const Palette1C: Palette = {
   Color2: "#e89850",
   Color3: "#983860",
   Color4: "#383898",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -41,7 +38,6 @@ export const Palette1D: Palette = {
   // Color3: "#f80000",
   Color3: "#a82820",
   Color4: "#501800",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -52,7 +48,6 @@ export const Palette1E: Palette = {
   Color2: "#78c078",
   Color3: "#688840",
   Color4: "#583820",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -63,7 +58,6 @@ export const Palette1F: Palette = {
   Color2: "#e08850",
   Color3: "#a80000",
   Color4: "#004010",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -74,7 +68,6 @@ export const Palette1G: Palette = {
   Color2: "#00a0e8",
   Color3: "#787800",
   Color4: "#f8f858",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -85,7 +78,6 @@ export const Palette1H: Palette = {
   Color2: "#f8b888",
   Color3: "#804000",
   Color4: "#301800",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -96,7 +88,6 @@ export const Palette2A: Palette = {
   Color2: "#c08848",
   Color3: "#287800",
   Color4: "#000000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -107,7 +98,6 @@ export const Palette2B: Palette = {
   Color2: "#f8e850",
   Color3: "#f83000",
   Color4: "#500058",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -118,7 +108,6 @@ export const Palette2C: Palette = {
   Color2: "#e88888",
   Color3: "#7830e8",
   Color4: "#282898",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -131,7 +120,6 @@ export const Palette2D: Palette = {
   // Color3: "#f83000",
   Color3: "#a82820",
   Color4: "#000050",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -142,7 +130,6 @@ export const Palette2E: Palette = {
   Color2: "#90b0e0",
   Color3: "#281060",
   Color4: "#100810",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -153,7 +140,6 @@ export const Palette2F: Palette = {
   Color2: "#f89050",
   Color3: "#a00000",
   Color4: "#180000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -164,7 +150,6 @@ export const Palette2G: Palette = {
   Color2: "#e05040",
   Color3: "#e0b880",
   Color4: "#001800",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -175,7 +160,6 @@ export const Palette2H: Palette = {
   Color2: "#b8b8b8",
   Color3: "#707070",
   Color4: "#000000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -186,7 +170,6 @@ export const Palette3A: Palette = {
   Color2: "#70c0c0",
   Color3: "#f86028",
   Color4: "#304860",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -197,7 +180,6 @@ export const Palette3B: Palette = {
   Color2: "#e08020",
   Color3: "#005000",
   Color4: "#001010",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -208,7 +190,6 @@ export const Palette3C: Palette = {
   Color2: "#f8f878",
   Color3: "#00b8f8",
   Color4: "#202058",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -220,7 +201,6 @@ export const Palette3D: Palette = {
   // Color3: "#08c800",
   Color3: "#68b838",
   Color4: "#000000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -231,7 +211,6 @@ export const Palette3E: Palette = {
   Color2: "#e0b068",
   Color3: "#b07820",
   Color4: "#504870",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -242,7 +221,6 @@ export const Palette3F: Palette = {
   Color2: "#f868f8",
   Color3: "#f8d000",
   Color4: "#404040",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -253,7 +231,6 @@ export const Palette3G: Palette = {
   Color2: "#60d850",
   Color3: "#c83038",
   Color4: "#380000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -264,7 +241,6 @@ export const Palette3H: Palette = {
   Color2: "#78c838",
   Color3: "#488818",
   Color4: "#081800",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -275,7 +251,6 @@ export const Palette4A: Palette = {
   Color2: "#78a8f8",
   Color3: "#d000d0",
   Color4: "#000078",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -286,7 +261,6 @@ export const Palette4B: Palette = {
   Color2: "#e8a060",
   Color3: "#407838",
   Color4: "#180808",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -297,7 +271,6 @@ export const Palette4C: Palette = {
   Color2: "#d8a0d0",
   Color3: "#98a0e0",
   Color4: "#080000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -308,7 +281,6 @@ export const Palette4D: Palette = {
   Color2: "#90c8c8",
   Color3: "#486878",
   Color4: "#082048",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -319,7 +291,6 @@ export const Palette4E: Palette = {
   Color2: "#e0a878",
   Color3: "#785888",
   Color4: "#002030",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -330,7 +301,6 @@ export const Palette4F: Palette = {
   Color2: "#d880d8",
   Color3: "#8000a0",
   Color4: "#380000",
-  TextColor: "#000000",
   Banished: false
 };
 
@@ -341,7 +311,6 @@ export const Palette4G: Palette = {
   Color2: "#b82058",
   Color3: "#281000",
   Color4: "#008060",
-  TextColor: "#000000",
   Banished: true
 };
 
@@ -352,7 +321,6 @@ export const Palette4H: Palette = {
   Color2: "#b8c058",
   Color3: "#808840",
   Color4: "#405028",
-  TextColor: "#000000",
   Banished: false
 };
 

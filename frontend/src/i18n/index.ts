@@ -7,6 +7,9 @@ import { Language } from "../resources/enums";
 i18n.use(initReactI18next).init({
   resources: Translations,
   lng: Language.br,
+  fallbackLng: {
+    default: [Language.br]
+  },
   keySeparator: false,
   interpolation: {
     escapeValue: false

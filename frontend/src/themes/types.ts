@@ -5,6 +5,5 @@ export interface Palette {
   Color2: string;
   Color3: string;
   Color4: string;
-  TextColor: string;
   Banished: boolean;
 }
