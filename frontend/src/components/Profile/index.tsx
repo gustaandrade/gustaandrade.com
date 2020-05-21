@@ -18,8 +18,6 @@ import {
 
 import Avatar from "../../assets/avatar.png";
 
-import { generateRandomBlob } from "../../helpers/blob";
-
 import { LanguageItems, BlobLocation } from "../../resources/enums";
 
 const Profile: React.FC = () => {
@@ -28,8 +26,9 @@ const Profile: React.FC = () => {
   return (
     <Container>
       <ProfileArea
-        slot={generateRandomBlob(BlobLocation.top)}
-        about={generateRandomBlob(BlobLocation.topLeft)}
+        about={BlobLocation.topLeft.toString()}
+        slot={BlobLocation.top.toString()}
+        autoCorrect={BlobLocation.smallTop.toString()}
       >
         <AvatarArea>
           <AvatarImage src={Avatar} alt="Avatar" />

@@ -10,8 +10,6 @@ import {
   LanguageDescription
 } from "./styles";
 
-import { generateRandomBlob } from "../../helpers/blob";
-
 import { LanguageItems, BlobLocation } from "../../resources/enums";
 
 const Specialties: React.FC = () => {
@@ -19,8 +17,8 @@ const Specialties: React.FC = () => {
 
   return (
     <Container
-      slot={generateRandomBlob(BlobLocation.middle)}
-      about={generateRandomBlob(BlobLocation.top)}
+      slot={BlobLocation.middle.toString()}
+      about={BlobLocation.top.toString()}
     >
       <SpecialtiesText>{t(LanguageItems.Specialties)}</SpecialtiesText>
 

@@ -13,8 +13,6 @@ import {
   PaletteSelectOption
 } from "./styles";
 
-import { generateRandomBlob } from "../../helpers/blob";
-
 import Palettes from "../../themes";
 import { Language, BlobLocation, LanguageItems } from "../../resources/enums";
 
@@ -39,8 +37,9 @@ const I18n: React.FC<I18nProps> = props => {
 
   return (
     <Container
-      slot={generateRandomBlob(BlobLocation.middle)}
-      about={generateRandomBlob(BlobLocation.topRight)}
+      about={BlobLocation.topRight.toString()}
+      slot={BlobLocation.middle.toString()}
+      autoCorrect={BlobLocation.smallMiddle.toString()}
     >
       <I18nContainer>
         <Button onClick={() => toggleLanguage(Language.br)}>

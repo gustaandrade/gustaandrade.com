@@ -19,10 +19,12 @@ export enum LanguageItems {
 }
 
 export enum BlobLocation {
-  topLeft = "topLeft",
-  top = "top",
-  topRight = "topRight",
-  middle = "middle"
+  topLeft = "0% 20% 60% 40% / 80% 35% 65% 20%",
+  top = "40% 40% 70% 70% / 75% 75% 100% 100%",
+  topRight = "45% 0% 45% 60% / 60% 80% 25% 45%",
+  middle = "40% 40% 40% 40% / 75% 75% 75% 75%",
+  smallTop = "30% 30% 40% 40% / 80% 80% 100% 100%",
+  smallMiddle = "20% 20% 20% 20% / 75% 75% 75% 75%"
 }
 
 export enum PillIcon {

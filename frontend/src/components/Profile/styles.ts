@@ -31,6 +31,7 @@ export const ProfileArea = styled.div`
   }
 
   @media only screen and (max-width: 614px) {
+    border-radius: ${props => props.autoCorrect};
     padding: 15px 0;
     min-width: 200px;
   }

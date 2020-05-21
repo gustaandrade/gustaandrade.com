@@ -22,6 +22,7 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 784px) {
+    border-radius: ${props => props.autoCorrect};
     margin: 0;
     padding: 20px;
   }
