@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Options from "./pages/Options";
 
-export default function Routes() {
+const Routes: React.FC = () => {
   return (
     <NavigationContainer>
       <AppStack.Navigator>
@@ -18,4 +18,6 @@ export default function Routes() {
       </AppStack.Navigator>
     </NavigationContainer>
   );
-}
+};
+
+export default Routes;
