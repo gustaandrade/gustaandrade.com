@@ -1,6 +1,10 @@
 import React from "react";
 import { Image } from "react-native";
-import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
+import {
+  FontAwesome,
+  FontAwesome5,
+  MaterialCommunityIcons
+} from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
@@ -57,7 +61,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesIcon>
             <MaterialCommunityIcons
               name="language-javascript"
-              size={64}
+              size={60}
               color={props.theme.Color3}
             />
             <SpecialtiesText>JavaScript</SpecialtiesText>
@@ -66,7 +70,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesIcon>
             <MaterialCommunityIcons
               name="language-typescript"
-              size={64}
+              size={60}
               color={props.theme.Color3}
             />
             <SpecialtiesText>TypeScript</SpecialtiesText>
@@ -75,7 +79,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesIcon>
             <MaterialCommunityIcons
               name="language-csharp"
-              size={64}
+              size={60}
               color={props.theme.Color3}
             />
             <SpecialtiesText>C#</SpecialtiesText>
@@ -84,27 +88,19 @@ const Home: React.FC<HomeProps> = props => {
 
         <SpecialtiesRow>
           <SpecialtiesIcon>
-            <MaterialCommunityIcons
-              name="react"
-              size={64}
-              color={props.theme.Color3}
-            />
+            <FontAwesome5 name="react" size={60} color={props.theme.Color3} />
             <SpecialtiesText>React</SpecialtiesText>
           </SpecialtiesIcon>
 
           <SpecialtiesIcon>
-            <MaterialCommunityIcons
-              name="android"
-              size={64}
-              color={props.theme.Color3}
-            />
+            <FontAwesome5 name="android" size={60} color={props.theme.Color3} />
             <SpecialtiesText>Mobile</SpecialtiesText>
           </SpecialtiesIcon>
 
           <SpecialtiesIcon>
             <MaterialCommunityIcons
               name="nodejs"
-              size={64}
+              size={60}
               color={props.theme.Color3}
             />
             <SpecialtiesText>NodeJS</SpecialtiesText>
@@ -113,7 +109,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesIcon>
             <MaterialCommunityIcons
               name="unity"
-              size={64}
+              size={60}
               color={props.theme.Color3}
             />
             <SpecialtiesText>Unity</SpecialtiesText>
@@ -122,7 +118,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesIcon>
             <Image
               source={require("../../assets/Icons/scrum.png")}
-              style={{ tintColor: props.theme.Color3, width: 64, height: 64 }}
+              style={{ tintColor: props.theme.Color3, width: 60, height: 60 }}
             />
             <SpecialtiesText>Scrum</SpecialtiesText>
           </SpecialtiesIcon>
@@ -159,8 +155,8 @@ const Home: React.FC<HomeProps> = props => {
 
         <SocialButton onPress={() => openURL("https://bit.ly/gusta_curriculo")}>
           <SocialIcon>
-            <FontAwesome5
-              name="file-pdf"
+            <FontAwesome
+              name="file-pdf-o"
               size={40}
               color={props.theme.Color3}
             />

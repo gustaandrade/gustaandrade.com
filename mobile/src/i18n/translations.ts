@@ -3,7 +3,8 @@ const Translations = {
     translation: {
       Home: "Início",
       Experiences: "Experiências",
-      Details: "Detalhes",
+      Profile: "Perfil",
+      Projects: "Projetos",
       Options: "Opções",
       Role: "Desenvolvedor Full Stack & de Jogos",
       Curriculum: "Currículo",
@@ -29,7 +30,8 @@ const Translations = {
     translation: {
       Home: "Home",
       Experiences: "Experiences",
-      Details: "Details",
+      Profile: "Profile",
+      Projects: "Projects",
       Options: "Options",
       Role: "Full Stack & Game Developer",
       Curriculum: "Resume",

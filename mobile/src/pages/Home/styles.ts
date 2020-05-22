@@ -3,6 +3,7 @@ import Constants from "expo-constants";
 import { Dimensions } from "react-native";
 
 export const Container = styled.View`
+  width: ${Dimensions.get("window").width}px;
   flex: 1;
 
   background-color: ${(props: any) => props.theme.Color1};
@@ -27,7 +28,7 @@ export const DescriptionArea = styled.View`
 `;
 
 export const SpecialtiesArea = styled.View`
-  flex: 0.45;
+  flex: 0.5;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -42,8 +43,7 @@ export const SpecialtiesArea = styled.View`
 
 export const SpecialtiesRow = styled.View`
   flex-direction: row;
-  align-items: center;
-  justify-content: center
+  align-items: baseline;
 
   margin: 5px 0;
 `;
@@ -52,11 +52,11 @@ export const SpecialtiesIcon = styled.View`
   flex-direction: column;
   align-items: center;
 
-  margin: 0 3px;
+  margin: 0 4px;
 `;
 
 export const SocialArea = styled.View`
-  flex: 0.55;
+  flex: 0.6;
   justify-content: flex-start;
 `;
 
@@ -71,7 +71,7 @@ export const SocialButton = styled.TouchableOpacity`
 
   height: 50px;
 
-  margin: 5px 15px;
+  margin: 4px 15px;
 `;
 
 export const SocialIcon = styled.View`

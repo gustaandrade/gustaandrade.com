@@ -2,10 +2,10 @@ import React from "react";
 
 import { StyledView, StyledText } from "./styles";
 
-export default function Details() {
+export default function Projects() {
   return (
     <StyledView>
-      <StyledText>details</StyledText>
+      <StyledText>experiences</StyledText>
     </StyledView>
   );
 }

@@ -6,7 +6,8 @@ export enum Language {
 export enum LanguageItems {
   Home = "Home",
   Experiences = "Experiences",
-  Details = "Details",
+  Profile = "Profile",
+  Projects = "Projects",
   Options = "Options",
   Role = "Role",
   Curriculum = "Curriculum",
