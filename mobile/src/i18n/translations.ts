@@ -1,6 +1,10 @@
 const Translations = {
   br: {
     translation: {
+      Home: "Início",
+      Experiences: "Experiências",
+      Details: "Detalhes",
+      Options: "Opções",
       Role: "Desenvolvedor Full Stack & de Jogos",
       Curriculum: "Currículo",
       Specialties: "Especialidades",
@@ -23,6 +27,10 @@ const Translations = {
   },
   en: {
     translation: {
+      Home: "Home",
+      Experiences: "Experiences",
+      Details: "Details",
+      Options: "Options",
       Role: "Full Stack & Game Developer",
       Curriculum: "Resume",
       Specialties: "Specialties",

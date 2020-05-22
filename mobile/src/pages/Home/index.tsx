@@ -1,8 +1,11 @@
 import React from "react";
 import { Image } from "react-native";
+import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
+import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
-import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
+
+import i18n from "../../i18n";
 
 import {
   Container,
@@ -23,13 +26,15 @@ import {
   SpecialtiesTitle
 } from "./styles";
 
-import i18n from "../../i18n";
-
 import { LanguageItems } from "../../resources/enums";
 import { HomeProps } from "./types";
 
 const Home: React.FC<HomeProps> = props => {
   const [t] = useTranslation(undefined, { i18n });
+
+  const openURL = (url: string) => {
+    Linking.openURL(url);
+  };
 
   return (
     <Container>
@@ -125,14 +130,16 @@ const Home: React.FC<HomeProps> = props => {
       </SpecialtiesArea>
 
       <SocialArea>
-        <SocialButton>
+        <SocialButton
+          onPress={() => openURL("mailto:oi@gustavoandrade.design")}
+        >
           <SocialIcon>
             <FontAwesome5 name="at" size={40} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>oi@gustavoandrade.design</SocialText>
         </SocialButton>
 
-        <SocialButton>
+        <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
           <SocialIcon>
             <FontAwesome5
               name="linkedin"
@@ -143,14 +150,14 @@ const Home: React.FC<HomeProps> = props => {
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
 
-        <SocialButton>
+        <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
           <SocialIcon>
             <FontAwesome5 name="github" size={40} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
 
-        <SocialButton>
+        <SocialButton onPress={() => openURL("https://bit.ly/gusta_curriculo")}>
           <SocialIcon>
             <FontAwesome5
               name="file-pdf"

@@ -11,21 +11,31 @@ import { getRandomIntBetween } from "./src/helpers/random";
 import { Palette } from "./src/themes/types";
 
 export default function App() {
-  const startPalette = Enumerable.from(Palettes).shuffle().toArray()[0];
-
   const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  const startPalette = Enumerable.from(Palettes)
+    .shuffle()
+    .where(p => !p.Banished)
+    .toArray()[0];
   const [randomTheme, setRandomTheme] = useState(startPalette);
 
   const shuffleNewTheme = (theme?: Palette) => {
-    setRandomTheme(
-      Enumerable.from(Palettes)
-        .shuffle()
-        .firstOrDefault(p =>
-          theme
-            ? p.value === theme.value
-            : p.value === getRandomIntBetween(0, Palettes.length)
-        )
-    );
+    if (theme) {
+      setRandomTheme(
+        Enumerable.from(Palettes)
+          .shuffle()
+          .firstOrDefault(p => p.value === theme.value)
+      );
+    } else {
+      setRandomTheme(
+        Enumerable.from(Palettes)
+          .shuffle()
+          .where(p => !p.Banished)
+          .firstOrDefault(
+            p => p.value === getRandomIntBetween(0, Palettes.length)
+          )
+      );
+    }
   };
 
   useEffect(() => shuffleNewTheme(), []);
