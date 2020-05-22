@@ -27,7 +27,8 @@ import {
   SpecialtiesRow,
   SpecialtiesText,
   SpecialtiesIcon,
-  SpecialtiesTitle
+  SpecialtiesTitle,
+  RandomButton
 } from "./styles";
 
 import { LanguageItems } from "../../resources/enums";
@@ -40,9 +41,16 @@ const Home: React.FC<HomeProps> = props => {
     Linking.openURL(url);
   };
 
+  const shuffleTheme = () => {
+    if (props.changeCustomTheme) props.changeCustomTheme();
+  };
+
   return (
     <Container>
       <ProfileArea>
+        <RandomButton onPress={() => shuffleTheme()}>
+          <FontAwesome5 name="dice" size={24} color={props.theme.Color3} />
+        </RandomButton>
         <AvatarImage source={require("../../assets/Avatar/avatar.png")} />
 
         <DescriptionArea>
@@ -129,7 +137,7 @@ const Home: React.FC<HomeProps> = props => {
           onPress={() => openURL("mailto:oi@gustavoandrade.design")}
         >
           <SocialIcon>
-            <FontAwesome5 name="at" size={40} color={props.theme.Color3} />
+            <FontAwesome5 name="at" size={36} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>oi@gustavoandrade.design</SocialText>
         </SocialButton>
@@ -138,7 +146,7 @@ const Home: React.FC<HomeProps> = props => {
           <SocialIcon>
             <FontAwesome5
               name="linkedin"
-              size={40}
+              size={36}
               color={props.theme.Color3}
             />
           </SocialIcon>
@@ -147,7 +155,7 @@ const Home: React.FC<HomeProps> = props => {
 
         <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
           <SocialIcon>
-            <FontAwesome5 name="github" size={40} color={props.theme.Color3} />
+            <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
@@ -156,7 +164,7 @@ const Home: React.FC<HomeProps> = props => {
           <SocialIcon>
             <FontAwesome
               name="file-pdf-o"
-              size={40}
+              size={36}
               color={props.theme.Color3}
             />
           </SocialIcon>

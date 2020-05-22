@@ -62,7 +62,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={randomTheme ? randomTheme : startPalette}>
-      <Routes />
+      <Routes changeTheme={shuffleNewTheme} />
     </ThemeProvider>
   );
 }

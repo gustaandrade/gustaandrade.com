@@ -11,8 +11,6 @@ import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import i18n from "./i18n";
 
-const Tab = createBottomTabNavigator();
-
 import Home from "./pages/Home";
 import Experiences from "./pages/Experiences";
 import Profile from "./pages/Profile";
@@ -21,6 +19,8 @@ import Options from "./pages/Options";
 
 import { LanguageItems } from "./resources/enums";
 import { RoutesProps } from "./types";
+
+const Tab = createBottomTabNavigator();
 
 const Routes: React.FC<RoutesProps> = props => {
   const [t] = useTranslation(undefined, { i18n });
@@ -40,7 +40,6 @@ const Routes: React.FC<RoutesProps> = props => {
       >
         <Tab.Screen
           name={t(LanguageItems.Home)}
-          component={Home}
           options={() => ({
             tabBarIcon: () => (
               <Image
@@ -51,7 +50,6 @@ const Routes: React.FC<RoutesProps> = props => {
                   tintColor: props.theme.Color3
                 }}
               />
-              // <FontAwesome5 name="home" size={24} color={props.theme.Color2} />
             ),
             tabBarLabel: () => (
               <Text
@@ -66,7 +64,9 @@ const Routes: React.FC<RoutesProps> = props => {
               </Text>
             )
           })}
-        />
+        >
+          {() => <Home changeCustomTheme={props.changeTheme} />}
+        </Tab.Screen>
 
         <Tab.Screen
           name={t(LanguageItems.Experiences)}
