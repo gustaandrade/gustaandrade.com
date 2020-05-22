@@ -77,10 +77,9 @@ const Home: React.FC<HomeProps> = props => {
           </SpecialtiesIcon>
 
           <SpecialtiesIcon>
-            <MaterialCommunityIcons
-              name="language-csharp"
-              size={60}
-              color={props.theme.Color3}
+            <Image
+              source={require("../../assets/Icons/csharp.png")}
+              style={{ tintColor: props.theme.Color3, width: 60, height: 60 }}
             />
             <SpecialtiesText>C#</SpecialtiesText>
           </SpecialtiesIcon>

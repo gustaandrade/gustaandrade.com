@@ -56,6 +56,7 @@ const Routes: React.FC<RoutesProps> = props => {
             tabBarLabel: () => (
               <Text
                 style={{
+                  fontFamily: "OpenSans-Bold",
                   fontSize: 12,
                   color: props.theme.Color4,
                   paddingBottom: 5
@@ -81,6 +82,7 @@ const Routes: React.FC<RoutesProps> = props => {
             tabBarLabel: () => (
               <Text
                 style={{
+                  fontFamily: "OpenSans-Bold",
                   fontSize: 12,
                   color: props.theme.Color4,
                   paddingBottom: 5
@@ -106,6 +108,7 @@ const Routes: React.FC<RoutesProps> = props => {
             tabBarLabel: () => (
               <Text
                 style={{
+                  fontFamily: "OpenSans-Bold",
                   fontSize: 12,
                   color: props.theme.Color4,
                   paddingBottom: 5
@@ -131,6 +134,7 @@ const Routes: React.FC<RoutesProps> = props => {
             tabBarLabel: () => (
               <Text
                 style={{
+                  fontFamily: "OpenSans-Bold",
                   fontSize: 12,
                   color: props.theme.Color4,
                   paddingBottom: 5
@@ -152,6 +156,7 @@ const Routes: React.FC<RoutesProps> = props => {
             tabBarLabel: () => (
               <Text
                 style={{
+                  fontFamily: "OpenSans-Bold",
                   fontSize: 12,
                   color: props.theme.Color4,
                   paddingBottom: 5
