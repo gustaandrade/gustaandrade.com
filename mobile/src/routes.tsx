@@ -148,7 +148,6 @@ const Routes: React.FC<RoutesProps> = props => {
 
         <Tab.Screen
           name={t(LanguageItems.Options)}
-          component={Options}
           options={() => ({
             tabBarIcon: () => (
               <FontAwesome5 name="cog" size={24} color={props.theme.Color3} />
@@ -166,7 +165,9 @@ const Routes: React.FC<RoutesProps> = props => {
               </Text>
             )
           })}
-        />
+        >
+          {() => <Options changeCustomTheme={props.changeTheme} />}
+        </Tab.Screen>
       </Tab.Navigator>
     </NavigationContainer>
   );

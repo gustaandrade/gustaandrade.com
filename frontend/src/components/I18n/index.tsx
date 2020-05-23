@@ -41,10 +41,26 @@ const I18n: React.FC<I18nProps> = props => {
       autoCorrect={BlobLocation.smallMiddle.toString()}
     >
       <I18nContainer>
-        <Button onClick={() => toggleLanguage(Language.br)}>
+        <Button
+          onClick={() => toggleLanguage(Language.br)}
+          style={{
+            borderBottom:
+              language === Language.br
+                ? `3px solid ${props.currentPalette.Color3}`
+                : 0
+          }}
+        >
           <Emoji text=":flag_brazil:" onlyEmojiClassName="make-emojis-large" />
         </Button>
-        <Button onClick={() => toggleLanguage(Language.en)}>
+        <Button
+          onClick={() => toggleLanguage(Language.en)}
+          style={{
+            borderBottom:
+              language === Language.en
+                ? `3px solid ${props.currentPalette.Color3}`
+                : 0
+          }}
+        >
           <Emoji
             text=":flag_united_states:"
             onlyEmojiClassName="make-emojis-large"

@@ -20,7 +20,9 @@ export enum LanguageItems {
   ThirdProject = "ThirdProject",
   FourthProject = "FourthProject",
   FifthProject = "FifthProject",
-  SixthProject = "SixthProject"
+  SixthProject = "SixthProject",
+  Language = "Language",
+  PaletteDescription = "PaletteDescription"
 }
 
 export enum BlobLocation {

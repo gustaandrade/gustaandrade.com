@@ -23,7 +23,10 @@ const Translations = {
       FifthProject:
         "<p>Você é o guardião do túmulo no cemitério da cidade. Durante a noite, coisas estranhas acontecem e muitos danos são causados ​​às lápides.</p><p>Você deve repará-las antes que os portões se abram na manhã seguinte, quando os visitantes chegam. Por quanto tempo você consegue manter o cemitério em boas condições?</p><p>Jogo feito no Unity, usando C#, para o Global Game Jam 2020.</p>",
       SixthProject:
-        "<p>Star Picross é um jogo em desenvolvimento na engine Unity, usando C#, para dispositivos Android e iOS.</p><p>Ajude a pequena estrela que caiu do céu a reencontrar o seu caminho de volta pra casa, resolvendo diversos puzzles do tipo picross.</p>"
+        "<p>Star Picross é um jogo em desenvolvimento na engine Unity, usando C#, para dispositivos Android e iOS.</p><p>Ajude a pequena estrela que caiu do céu a reencontrar o seu caminho de volta pra casa, resolvendo diversos puzzles do tipo picross.</p>",
+      Language: "Idioma",
+      PaletteDescription:
+        "As 32 paletas de cores presentes nesse aplicativo replicam as paletas presentes no acessório Super Game Boy, para Super Nintendo.\n\nEsse acessório permite que jogos de Game Boy sejam jogados no Super Nintendo com alguns recursos a mais, como o acesso a diferentes paletas de cores."
     }
   },
   en: {
@@ -50,7 +53,10 @@ const Translations = {
       FifthProject:
         "<p>You're the tomb keeper in the city's graveyard. During night, weird things happen and a lot of damage is done to the tombstones.</p><p>You must repair them before the gates open in the next morning, when the visitors arrive. For how long can you keep the graveyard in good conditions?</p><p>Game made in Unit, using C#, for Global Game Jam 2020.</p>",
       SixthProject:
-        "<p>Star Picross is a game under development on the Unity engine, using C#, for Android and iOS devices.</p><p>Help the little star that fell from the sky to find his way back home, solving various picross-type puzzles.</p>"
+        "<p>Star Picross is a game under development on the Unity engine, using C#, for Android and iOS devices.</p><p>Help the little star that fell from the sky to find his way back home, solving various picross-type puzzles.</p>",
+      Language: "Language",
+      PaletteDescription:
+        "The 32 color palettes in this app replicate the palettes present in the Super Game Boy accessory for Super Nintendo.\n\nThis accessory allows Game Boy games to be played on the Super Nintendo with some additional features, such as access to different palettes of colors."
     }
   }
 };
