@@ -22,7 +22,8 @@ export enum LanguageItems {
   FifthProject = "FifthProject",
   SixthProject = "SixthProject",
   Language = "Language",
-  PaletteDescription = "PaletteDescription"
+  PaletteDescription = "PaletteDescription",
+  Contacts = "Contacts"
 }
 
 export enum BlobLocation {

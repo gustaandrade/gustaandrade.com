@@ -133,6 +133,21 @@ const Home: React.FC<HomeProps> = props => {
       </SpecialtiesArea>
 
       <SocialArea>
+        <SpecialtiesRow>
+          <SpecialtiesTitle>{t(LanguageItems.Contacts)}</SpecialtiesTitle>
+        </SpecialtiesRow>
+
+        <SocialButton onPress={() => openURL("https://bit.ly/gusta_portfolio")}>
+          <SocialIcon>
+            <MaterialCommunityIcons
+              name="web"
+              size={36}
+              color={props.theme.Color3}
+            />
+          </SocialIcon>
+          <SocialText>gustavoandrade.design</SocialText>
+        </SocialButton>
+
         <SocialButton
           onPress={() => openURL("mailto:oi@gustavoandrade.design")}
         >
@@ -142,7 +157,7 @@ const Home: React.FC<HomeProps> = props => {
           <SocialText>oi@gustavoandrade.design</SocialText>
         </SocialButton>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
+        {/* <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
           <SocialIcon>
             <FontAwesome5
               name="linkedin"
@@ -151,9 +166,9 @@ const Home: React.FC<HomeProps> = props => {
             />
           </SocialIcon>
           <SocialText>/gustaandrade</SocialText>
-        </SocialButton>
+        </SocialButton> */}
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
+        {/* <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
           <SocialIcon>
             <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
           </SocialIcon>
@@ -169,7 +184,7 @@ const Home: React.FC<HomeProps> = props => {
             />
           </SocialIcon>
           <SocialText>{t(LanguageItems.Curriculum)}</SocialText>
-        </SocialButton>
+        </SocialButton> */}
       </SocialArea>
     </Container>
   );

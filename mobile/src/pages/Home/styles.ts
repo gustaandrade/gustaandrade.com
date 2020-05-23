@@ -30,7 +30,7 @@ export const DescriptionArea = styled.View`
 `;
 
 export const SpecialtiesArea = styled.View`
-  flex: 0.5;
+  flex: 0.55;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ export const SpecialtiesArea = styled.View`
 
   border-radius: 50px;
 
-  margin: 15px;
+  margin: 15px 15px 0 15px;
   padding: 15px;
 `;
 
@@ -58,8 +58,18 @@ export const SpecialtiesIcon = styled.View`
 `;
 
 export const SocialArea = styled.View`
-  flex: 0.6;
-  justify-content: flex-start;
+  flex: 0.45;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: ${(props: HomeProps) => props.theme.Color2};
+
+  border-radius: 50px;
+
+  margin: 15px;
+  padding: 15px;
 `;
 
 export const SocialButton = styled.TouchableOpacity`
@@ -68,17 +78,19 @@ export const SocialButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: flex-start;
 
-  background-color: ${(props: HomeProps) => props.theme.Color2};
-  border-radius: 25px;
+  border: 3px;
+  border-color: ${(props: HomeProps) => props.theme.Color3};
+  border-radius: 50px;
 
-  height: 50px;
+  width: 100%;
+  height: 60px;
 
-  margin: 4px 15px;
+  margin: 0px 15px;
 `;
 
 export const SocialIcon = styled.View`
   align-items: flex-end;
-  width: 80px;
+  width: 65px;
   padding-right: 15px;
 `;
 
