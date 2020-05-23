@@ -28,7 +28,6 @@ const I18n: React.FC<I18nProps> = props => {
 
     setLanguage(newLang);
     i18n.changeLanguage(newLang);
-    props.shuffleTheme();
   }
 
   function changePalette(value: string) {
