@@ -27,7 +27,11 @@ const Translations = {
       Language: "Idioma",
       PaletteDescription:
         "As 32 paletas de cores presentes nesse aplicativo replicam as paletas presentes no acessório Super Game Boy, para Super Nintendo.\n\nEsse acessório permite que jogos de Game Boy sejam jogados no Super Nintendo com alguns recursos a mais, como o acesso a diferentes paletas de cores.",
-      Contacts: "Contatos"
+      Contacts: "Contatos",
+      ProfileDescription: "28, ele/dele, ISFP-T",
+      Knowledges: "Conhecimentos",
+      SocialLinks: "Redes sociais",
+      Phone: "Telefone de trabalho"
     }
   },
   en: {
@@ -58,7 +62,11 @@ const Translations = {
       Language: "Language",
       PaletteDescription:
         "The 32 color palettes in this app replicate the palettes present in the Super Game Boy accessory for Super Nintendo.\n\nThis accessory allows Game Boy games to be played on the Super Nintendo with some additional features, such as access to different palettes of colors.",
-      Contacts: "Contacts"
+      Contacts: "Contacts",
+      ProfileDescription: "28, he/him, ISFP-T",
+      Knowledges: "Knowledges",
+      SocialLinks: "Social links",
+      Phone: "Work phone"
     }
   }
 };

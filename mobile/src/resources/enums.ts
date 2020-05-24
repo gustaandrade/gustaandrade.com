@@ -23,7 +23,11 @@ export enum LanguageItems {
   SixthProject = "SixthProject",
   Language = "Language",
   PaletteDescription = "PaletteDescription",
-  Contacts = "Contacts"
+  Contacts = "Contacts",
+  ProfileDescription = "ProfileDescription",
+  Knowledges = "Knowledges",
+  SocialLinks = "SocialLinks",
+  Phone = "Phone"
 }
 
 export enum BlobLocation {
