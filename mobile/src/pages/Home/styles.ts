@@ -151,4 +151,6 @@ export const RandomButton = styled.TouchableOpacity`
   background-color: ${(props: HomeProps) => props.theme.Color2};
   border-color: ${(props: HomeProps) => props.theme.Color3};
   border-width: 3px;
+
+  elevation: 10;
 `;

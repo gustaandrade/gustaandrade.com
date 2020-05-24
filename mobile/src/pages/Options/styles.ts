@@ -18,7 +18,7 @@ export const I18nArea = styled.View`
   align-items: center;
   justify-content: space-around;
 
-  width: ${Dimensions.get("window").width - 50}px;
+  width: ${Dimensions.get("window").width - 30}px;
 
   border-radius: 50px;
   background-color: ${(props: OptionsProps) => props.theme.Color2};
@@ -52,7 +52,7 @@ export const FlagTouchArea = styled.TouchableOpacity`
 export const PalettesArea = styled.View`
   flex-direction: column;
 
-  width: ${Dimensions.get("window").width - 50}px;
+  width: ${Dimensions.get("window").width - 30}px;
 
   border-radius: 50px;
   background-color: ${(props: OptionsProps) => props.theme.Color2};

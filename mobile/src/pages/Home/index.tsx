@@ -152,35 +152,6 @@ const Home: React.FC<HomeProps> = props => {
           </SocialIcon>
           <SocialText>oi@gustavoandrade.design</SocialText>
         </SocialButton>
-
-        {/* <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
-          <SocialIcon>
-            <FontAwesome5
-              name="linkedin"
-              size={36}
-              color={props.theme.Color3}
-            />
-          </SocialIcon>
-          <SocialText>/gustaandrade</SocialText>
-        </SocialButton> */}
-
-        {/* <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
-          <SocialIcon>
-            <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
-          </SocialIcon>
-          <SocialText>/gustaandrade</SocialText>
-        </SocialButton>
-
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_curriculo")}>
-          <SocialIcon>
-            <FontAwesome
-              name="file-pdf-o"
-              size={36}
-              color={props.theme.Color3}
-            />
-          </SocialIcon>
-          <SocialText>{t(LanguageItems.Curriculum)}</SocialText>
-        </SocialButton> */}
       </SocialArea>
     </Container>
   );

@@ -9,7 +9,7 @@ export const ExperienceArea = styled.View`
   background-color: ${(props: any) => props.theme.Color2};
   border-radius: 50px;
 
-  width: ${Dimensions.get("window").width - 50}px;
+  width: ${Dimensions.get("window").width - 30}px;
 
   margin-bottom: 20px;
   padding: 15px;
