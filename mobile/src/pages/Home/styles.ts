@@ -5,7 +5,6 @@ import { Dimensions } from "react-native";
 import { HomeProps } from "./types";
 
 export const Container = styled.View`
-  width: ${Dimensions.get("window").width}px;
   flex: 1;
 
   background-color: ${(props: HomeProps) => props.theme.Color1};

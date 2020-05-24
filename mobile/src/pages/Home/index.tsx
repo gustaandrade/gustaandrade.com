@@ -1,10 +1,6 @@
 import React from "react";
 import { Image } from "react-native";
-import {
-  FontAwesome,
-  FontAwesome5,
-  MaterialCommunityIcons
-} from "@expo/vector-icons";
+import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
