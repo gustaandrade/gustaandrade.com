@@ -31,7 +31,40 @@ const Translations = {
       ProfileDescription: "28, ele/dele, ISFP-T",
       Knowledges: "Conhecimentos",
       SocialLinks: "Redes sociais",
-      Phone: "Telefone de trabalho"
+      Phone: "Telefone de trabalho",
+      Academic: "Acadêmicas",
+      Professional: "Profissionais",
+      FirstExperience:
+        "Desenvolvedor Front-End responsável por desenvolver interfaces e soluções web de diversos sistemas da empresa, utilizando as tecnologias do ecossistema React, NextJS, Redux, Webpack, GraphQL e TypeScript.\n\nEm menor escala, atuando também no desenvolvimento e manutenção de produtos do backend que usam tecnologias como NodeJS, Nest e AWS.",
+      SecondExperience:
+        "Desenvolvedor de jogos usando a engine Unity e a linguagem C#, atuando no time de desenvolvimento e manutenção de três aplicativos Android e iOS, cujos jogos são ativados por voz e auxiliam o tratamento de crianças com dificuldades na fala.\n\nEm menor escala, atuando também na construção e manutenção de sistemas e páginas web da empresa, usando tecnologias como .NET, Razor, JavaScript e Wordpress.",
+      ThirdExperience:
+        "Funcionário do setor de tecnologia do hospital, responsável por realizar operações estruturais, de hardware, software e rede pelos diferentes setores e equipamentos do estabelecimento.",
+      FourthExperience:
+        "Professor responsável por lecionar cursos de informática de níveis básicos e avançados dos softwares do pacote Office, Adobe, Corel Draw e manutenção de computadores.",
+      FifthExperience: "Bacharelado em Design de Games",
+      SixthExperience: "Técnico em Programação de Jogos Digitais",
+      SeventhExperience: "Técnico em Informática Gerencial",
+      FirstExperienceRole: "Desenvolvedor Front-End",
+      SecondExperienceRole: "Desenvolvedor Unity",
+      ThirdExperienceRole: "Estagiário de TI",
+      FourthExperienceRole: "Professor",
+      FifthExperienceRole: "",
+      SixthExperienceRole: "",
+      SeventhExperienceRole: "",
+      Actual: "atual",
+      JAN: "jan",
+      FEB: "fev",
+      MAR: "mar",
+      APR: "abr",
+      MAY: "mai",
+      JUN: "jun",
+      JUL: "jul",
+      AUG: "ago",
+      SEP: "set",
+      OCT: "out",
+      NOV: "nov",
+      DEC: "dez"
     }
   },
   en: {
@@ -66,7 +99,40 @@ const Translations = {
       ProfileDescription: "28, he/him, ISFP-T",
       Knowledges: "Knowledges",
       SocialLinks: "Social links",
-      Phone: "Work phone"
+      Phone: "Work phone",
+      Academic: "Academic",
+      Professional: "Professional",
+      FirstExperience:
+        "Front-end developer responsible for developing interfaces and web solutions for various company systems, using technologies from React ecossystem, such as NextJS, Redux, Webpack, GraphQL and TypeScript.\n\nIn a smaller scale, also acting the development and maintenance of backend systems, using technologies like NodeJS, Nest and AWS.",
+      SecondExperience:
+        "Game developer using the Unity engine and the C# language, working on the development and maintenance team of three Android and iOS applications, whose games are activated by voice and help the treatment of children with speech difficulties.\n\nIn a smaller scale, also acting in construction and maintenance of other systems and web pages of the company, using technologies such as .NET, Razor, JavaScript and Wordpress.",
+      ThirdExperience:
+        "Employee of the hospital's technology sector, responsible for carrying out structural, hardware, software and network operations for the different sectors and equipment.",
+      FourthExperience:
+        "Professor responsible for teaching basic and advanced computer courses an array of sotware families, such as Office, Adobe, Corel Draw and computer maintenance.",
+      FifthExperience: "FifthExperience",
+      SixthExperience: "SixthExperience",
+      SeventhExperience: "SeventhExperience",
+      FirstExperienceRole: "Front-End Developer",
+      SecondExperienceRole: "Unity Developer",
+      ThirdExperienceRole: "Technology Intern",
+      FourthExperienceRole: "Professor",
+      FifthExperienceRole: "",
+      SixthExperienceRole: "",
+      SeventhExperienceRole: "",
+      Actual: "currently",
+      JAN: "jan",
+      FEB: "feb",
+      MAR: "mar",
+      APR: "apr",
+      MAY: "may",
+      JUN: "jun",
+      JUL: "jul",
+      AUG: "aug",
+      SEP: "sep",
+      OCT: "oct",
+      NOV: "nov",
+      DEC: "dec"
     }
   }
 };

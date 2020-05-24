@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
 import Constants from "expo-constants";
-import { Dimensions } from "react-native";
 
 import { ProjectProps } from "./types";
 
