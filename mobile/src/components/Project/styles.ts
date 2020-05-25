@@ -39,6 +39,8 @@ export const ProjectDescriptionArea = styled.View`
 export const ProjectTitleText = styled.Text`
   font-family: "Jost-Bold";
   font-size: 20px;
+
+  color: ${(props: any) => props.theme.Color4};
 `;
 
 export const ProjectDescriptionText = styled.Text`

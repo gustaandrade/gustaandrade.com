@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "Portfolio - @gustaandrade",
-    "slug": "mobile",
-    "platforms": ["ios", "android", "web"],
+    "name": "gustavoandrade.design",
+    "description": "Portfolio for @gustaandrade",
+    "slug": "gustavoandrade-dot-design",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
+    "githubUrl": "https://github.com/gustaandrade/gustavoandrade.design",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,6 +20,9 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.gustaandrade.gustavoandradedotdesign"
     }
   }
 }

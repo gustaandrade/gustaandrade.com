@@ -24,4 +24,6 @@ export const ExperienceTitle = styled.Text`
   text-align: center;
 
   margin: 10px 0 20px 0;
+
+  color: ${(props: ExperiencesProps) => props.theme.Color4};
 `;

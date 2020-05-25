@@ -36,11 +36,15 @@ export const ExperienceDescriptionArea = styled.View`
 export const ExperienceTitleText = styled.Text`
   font-family: "Jost-Bold";
   font-size: 24px;
+
+  color: ${(props: any) => props.theme.Color4};
 `;
 
 export const ExperienceDurationText = styled.Text`
   font-family: "Jost-Medium";
   font-size: 16px;
+
+  color: ${(props: any) => props.theme.Color4};
 `;
 
 export const ExperienceDescriptionText = styled.Text`

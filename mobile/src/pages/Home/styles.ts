@@ -77,6 +77,8 @@ export const SocialButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: flex-start;
 
+  color: ${(props: HomeProps) => props.theme.Color4};
+
   border: 3px;
   border-color: ${(props: HomeProps) => props.theme.Color3};
   border-radius: 50px;
@@ -96,6 +98,8 @@ export const SocialIcon = styled.View`
 export const SocialText = styled.Text`
   font-family: "Jost-Bold";
   font-size: 20px;
+
+  color: ${(props: HomeProps) => props.theme.Color4};
 `;
 
 export const AvatarImage = styled.Image`

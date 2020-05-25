@@ -129,6 +129,8 @@ export const SocialIcon = styled.View`
 export const SocialText = styled.Text`
   font-family: "Jost-Bold";
   font-size: 20px;
+
+  color: ${(props: ProfileProps) => props.theme.Color4};
 `;
 
 export const AvatarImage = styled.Image`
