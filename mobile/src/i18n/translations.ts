@@ -103,16 +103,16 @@ const Translations = {
       Academic: "Academic",
       Professional: "Professional",
       FirstExperience:
-        "Front-end developer responsible for developing interfaces and web solutions for various company systems, using technologies from React ecossystem, such as NextJS, Redux, Webpack, GraphQL and TypeScript.\n\nIn a smaller scale, also acting the development and maintenance of backend systems, using technologies like NodeJS, Nest and AWS.",
+        "Front-end developer responsible for developing interfaces and web solutions for various company systems, using technologies from React ecossystem, such as NextJS, Redux, Webpack, GraphQL and TypeScript.\n\nIn a smaller scale, also acting in the development and maintenance of backend systems, using technologies like NodeJS, Nest and AWS.",
       SecondExperience:
         "Game developer using the Unity engine and the C# language, working on the development and maintenance team of three Android and iOS applications, whose games are activated by voice and help the treatment of children with speech difficulties.\n\nIn a smaller scale, also acting in construction and maintenance of other systems and web pages of the company, using technologies such as .NET, Razor, JavaScript and Wordpress.",
       ThirdExperience:
         "Employee of the hospital's technology sector, responsible for carrying out structural, hardware, software and network operations for the different sectors and equipment.",
       FourthExperience:
         "Professor responsible for teaching basic and advanced computer courses an array of sotware families, such as Office, Adobe, Corel Draw and computer maintenance.",
-      FifthExperience: "FifthExperience",
-      SixthExperience: "SixthExperience",
-      SeventhExperience: "SeventhExperience",
+      FifthExperience: "Bachelor in Game Design",
+      SixthExperience: "Digital Games Programming Technician",
+      SeventhExperience: "Managerial Computer Technician",
       FirstExperienceRole: "Front-End Developer",
       SecondExperienceRole: "Unity Developer",
       ThirdExperienceRole: "Technology Intern",
