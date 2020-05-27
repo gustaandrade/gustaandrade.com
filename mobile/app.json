@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "gustavoandrade.design",
-    "description": "Portfolio for @gustaandrade",
+    "description": "@gustaandrade - Portfolio",
     "slug": "gustavoandrade-dot-design",
     "privacy": "public",
     "platforms": ["ios", "android"],
