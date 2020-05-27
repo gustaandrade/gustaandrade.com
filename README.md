@@ -39,27 +39,27 @@ A biblioteca `styled-components` foi usada para a construção do visual princip
 ## Mobile
 
 <div align="center">
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-1.jpg" height="300">
+  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-1.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-2.jpg" height="300">
+  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-2.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-3.jpg" height="300">
+  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-3.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-4.jpg" height="300">
+  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-4.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-5.jpg" height="300">
+  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-5.jpg" height="370">
 </div>
 <br />
 
 Já a versão mobile foi feita usando `Expo` para a construção e publicação mobile, além é claro da utilização em comum à versão web das bibliotecas `styled-components` e `i18next`.
 
-O aplicativo ainda deve ser publicado na Play Store em breve, mas enquanto não está lá, [pode ser baixado para Android nesse link](./assets/gustavoandrade-dot-design.apk).
+O aplicativo deve ser publicado na Play Store em breve, mas enquanto não está lá, [pode ser baixado para Android nesse link](https://drive.google.com/file/d/1cB4G1yrXZ7WZG8AFje9A_nwyQ2fFBbHM/view?usp=sharing).
 
 ## Futuro
 
 O resultado final da experiência completa ficou bem legal na minha opinião, mas sempre há o que melhorar. O intuito é continuar aprimorando esse repositório conforme novos projetos forem nascendo e conforme novas tecnologias forem despertando o interesse.
 
-Tudo isso foi feito com bastante empenho e carinho. <3
+Tudo isso foi feito com bastante empenho e carinho. :yellow_heart:
 
 ## Licença
 
