@@ -43,7 +43,7 @@ const Profile: React.FC = () => {
         <SocialArea>
           <SocialColumn>
             <SocialLink
-              href="https://bit.ly/gusta_github"
+              href="https://github.com/gustaandrade"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -59,7 +59,7 @@ const Profile: React.FC = () => {
             </SocialLink>
 
             <SocialLink
-              href="https://bit.ly/gusta_linkedin"
+              href="https://linkedin.com/in/gustaandrade"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -83,7 +83,7 @@ const Profile: React.FC = () => {
             </SocialLink>
 
             <SocialLink
-              href="https://bit.ly/gusta_curriculo"
+              href="https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

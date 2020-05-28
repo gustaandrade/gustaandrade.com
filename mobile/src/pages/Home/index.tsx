@@ -133,7 +133,7 @@ const Home: React.FC<HomeProps> = props => {
           <SpecialtiesTitle>{t(LanguageItems.Contacts)}</SpecialtiesTitle>
         </SpecialtiesRow>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_portfolio")}>
+        <SocialButton onPress={() => openURL("https://gustavoandrade.design")}>
           <SocialIcon>
             <MaterialCommunityIcons
               name="web"

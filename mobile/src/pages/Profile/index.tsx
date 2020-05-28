@@ -288,14 +288,18 @@ const Profile: React.FC<ProfileProps> = props => {
           <SpecialtiesTitle>{t(LanguageItems.SocialLinks)}</SpecialtiesTitle>
         </SpecialtiesRow>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
+        <SocialButton
+          onPress={() => openURL("https://github.com/gustaandrade")}
+        >
           <SocialIcon>
             <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
+        <SocialButton
+          onPress={() => openURL("https://linkedin.com/in/gustaandrade")}
+        >
           <SocialIcon>
             <FontAwesome5
               name="linkedin"
@@ -306,7 +310,7 @@ const Profile: React.FC<ProfileProps> = props => {
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_whatsapp")}>
+        <SocialButton onPress={() => openURL("https://wa.me/5511943771859")}>
           <SocialIcon>
             <FontAwesome5
               name="whatsapp"
@@ -317,7 +321,13 @@ const Profile: React.FC<ProfileProps> = props => {
           <SocialText>{t(LanguageItems.Phone)}</SocialText>
         </SocialButton>
 
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_curriculo")}>
+        <SocialButton
+          onPress={() =>
+            openURL(
+              "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
+            )
+          }
+        >
           <SocialIcon>
             <FontAwesome
               name="file-pdf-o"
