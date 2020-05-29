@@ -53,7 +53,7 @@ A biblioteca `styled-components` foi usada para a construção do visual princip
 
 Já a versão mobile foi feita usando `Expo` para a construção e publicação mobile, além é claro da utilização em comum à versão web das bibliotecas `styled-components` e `i18next`.
 
-O aplicativo deve ser publicado na Play Store em breve, mas enquanto não está lá, [pode ser baixado para Android nesse link](https://drive.google.com/file/d/1cB4G1yrXZ7WZG8AFje9A_nwyQ2fFBbHM/view?usp=sharing).
+O aplicativo está disponível gratuitamente na Play Store, e você [pode baixar ele nesse link](https://play.google.com/store/apps/details?id=com.gustaandrade.gustavoandradedotdesign).
 
 ## Futuro
 
