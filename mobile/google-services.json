@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "510106912519",
+    "firebase_url": "https://portfolio-d16fe.firebaseio.com",
+    "project_id": "portfolio-d16fe",
+    "storage_bucket": "portfolio-d16fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510106912519:android:b5a9c7c369fde6fa80e7a2",
+        "android_client_info": {
+          "package_name": "com.gustaandrade.gustavoandradedotdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510106912519-hggpg45g2o1uoo485tpibmesbb1cudb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVPF5q-aRj4zzeHBuP5YtLyOKi95xxie8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510106912519-hggpg45g2o1uoo485tpibmesbb1cudb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

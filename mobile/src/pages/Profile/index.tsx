@@ -1,16 +1,15 @@
 import React from "react";
-import { Image } from "react-native";
-import {
-  FontAwesome,
-  FontAwesome5,
-  MaterialCommunityIcons,
-  Fontisto,
-  Entypo
-} from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
 import Emoji from "react-native-emoji";
+import {
+  FontAwesome,
+  FontAwesome5,
+  MaterialCommunityIcons,
+  Fontisto
+} from "@expo/vector-icons";
+import * as Analytics from "expo-firebase-analytics";
 
 import i18n from "../../i18n";
 
@@ -37,13 +36,18 @@ import {
   SpecialtiesIconRight
 } from "./styles";
 
-import { LanguageItems } from "../../resources/enums";
+import { LanguageItems, Language } from "../../resources/enums";
 import { ProfileProps } from "./types";
 
 const Profile: React.FC<ProfileProps> = props => {
   const [t] = useTranslation(undefined, { i18n });
 
-  const openURL = (url: string) => {
+  const openURL = async (url: string, origin: string) => {
+    await Analytics.logEvent("SocialButtonClicked", {
+      name: origin,
+      screen: "Profile"
+    });
+
     Linking.openURL(url);
   };
 
@@ -289,7 +293,7 @@ const Profile: React.FC<ProfileProps> = props => {
         </SpecialtiesRow>
 
         <SocialButton
-          onPress={() => openURL("https://github.com/gustaandrade")}
+          onPress={() => openURL("https://github.com/gustaandrade", "Github")}
         >
           <SocialIcon>
             <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
@@ -298,7 +302,9 @@ const Profile: React.FC<ProfileProps> = props => {
         </SocialButton>
 
         <SocialButton
-          onPress={() => openURL("https://linkedin.com/in/gustaandrade")}
+          onPress={() =>
+            openURL("https://linkedin.com/in/gustaandrade", "Linkedin")
+          }
         >
           <SocialIcon>
             <FontAwesome5
@@ -310,7 +316,9 @@ const Profile: React.FC<ProfileProps> = props => {
           <SocialText>/gustaandrade</SocialText>
         </SocialButton>
 
-        <SocialButton onPress={() => openURL("https://wa.me/5511943771859")}>
+        <SocialButton
+          onPress={() => openURL("https://wa.me/5511943771859", "WhatsApp")}
+        >
           <SocialIcon>
             <FontAwesome5
               name="whatsapp"
@@ -324,7 +332,10 @@ const Profile: React.FC<ProfileProps> = props => {
         <SocialButton
           onPress={() =>
             openURL(
-              "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
+              i18n.language === Language.br
+                ? "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
+                : "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_EN.pdf",
+              "Curriculum"
             )
           }
         >

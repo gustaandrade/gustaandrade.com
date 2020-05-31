@@ -22,7 +22,17 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.gustaandrade.gustavoandradedotdesign"
+      "package": "com.gustaandrade.gustavoandradedotdesign",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyBVPF5q-aRj4zzeHBuP5YtLyOKi95xxie8",
+          "measurementId": "G-9LX7R9LV5Q"
+        }
+      }
     }
+  }
   }
 }

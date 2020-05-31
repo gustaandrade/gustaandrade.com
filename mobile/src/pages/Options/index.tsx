@@ -4,6 +4,7 @@ import Emoji from "react-native-emoji";
 import { useTranslation } from "react-i18next";
 import { Picker } from "@react-native-community/picker";
 import Enumerable from "linq";
+import * as Analytics from "expo-firebase-analytics";
 
 import {
   Container,
@@ -32,17 +33,27 @@ const Options: React.FC<OptionsProps> = props => {
   const [t, i18n] = useTranslation();
   const [currentPalette, setCurrentPalette] = useState(props.theme.value);
 
-  const toggleLanguage = (newLang: Language) => {
+  const toggleLanguage = async (newLang: Language) => {
+    await Analytics.logEvent("LanguageButtonClicked", {
+      name: newLang,
+      screen: "Options"
+    });
+
     i18n.changeLanguage(newLang);
   };
 
-  const togglePalette = (paletteValue: number) => {
-    setCurrentPalette(paletteValue);
+  const togglePalette = async (paletteValue: number) => {
+    const selectedPalette = Enumerable.from(Palettes).firstOrDefault(
+      p => p.value === paletteValue
+    );
 
-    if (props.changeCustomTheme)
-      props.changeCustomTheme(
-        Enumerable.from(Palettes).firstOrDefault(p => p.value === paletteValue)
-      );
+    await Analytics.logEvent("ThemeButtonClicked", {
+      name: selectedPalette.name,
+      screen: "Options"
+    });
+
+    if (props.changeCustomTheme) props.changeCustomTheme(selectedPalette);
+    setCurrentPalette(paletteValue);
   };
 
   return (

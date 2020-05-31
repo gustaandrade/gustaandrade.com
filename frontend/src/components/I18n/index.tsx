@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Emoji from "react-emoji-render";
 import { useTranslation } from "react-i18next";
+import ReactGA from "react-ga";
 
 import {
   Container,
@@ -26,11 +27,23 @@ const I18n: React.FC<I18nProps> = props => {
   function toggleLanguage(newLang: Language) {
     if (language === newLang) return;
 
+    ReactGA.event({
+      category: "I18n",
+      action: "Changed Language",
+      label: newLang
+    });
+
     setLanguage(newLang);
     i18n.changeLanguage(newLang);
   }
 
   function changePalette(value: string) {
+    ReactGA.event({
+      category: "Theme",
+      action: "Changed Palette",
+      label: value
+    });
+
     props.shuffleTheme(Palettes[parseInt(value, 10)]);
   }
 

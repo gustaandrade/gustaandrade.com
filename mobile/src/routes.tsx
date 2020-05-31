@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Text, Image } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import {
+  NavigationContainer,
+  NavigationContainerRef,
+  NavigationState,
+  PartialState
+} from "@react-navigation/native";
 import {
   createBottomTabNavigator,
   BottomTabBarOptions
@@ -8,6 +13,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { withTheme } from "styled-components";
 import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
+import * as Analytics from "expo-firebase-analytics";
 
 import i18n from "./i18n";
 
@@ -22,15 +28,43 @@ import { RoutesProps } from "./types";
 
 const Tab = createBottomTabNavigator();
 
+const getActiveRouteName = (
+  state: NavigationState | PartialState<NavigationState>
+): string => {
+  const route = state.routes[state.index!];
+
+  if (route.state) return getActiveRouteName(route.state);
+  return route.name;
+};
+
 const Routes: React.FC<RoutesProps> = props => {
   const [t] = useTranslation(undefined, { i18n });
+
+  const [routeName, setRouteName] = useState<string>("Home");
+  const navigationRef = useRef<NavigationContainerRef | null>(null);
+
+  useEffect(() => {
+    const state = navigationRef.current!.getRootState();
+    setRouteName(getActiveRouteName(state));
+  }, []);
 
   const bottomTabBarOptions: BottomTabBarOptions = {
     style: { height: 60 }
   };
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      onStateChange={state => {
+        const previousRouteName: string = routeName;
+        const currentRouteName: string = getActiveRouteName(state!);
+
+        if (previousRouteName !== currentRouteName)
+          Analytics.setCurrentScreen(currentRouteName);
+
+        setRouteName(currentRouteName);
+      }}
+      ref={navigationRef}
+    >
       <Tab.Navigator
         initialRouteName={t(LanguageItems.Home)}
         backBehavior="history"

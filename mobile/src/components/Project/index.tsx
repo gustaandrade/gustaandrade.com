@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
+import * as Analytics from "expo-firebase-analytics";
 
 import {
   ProjectArea,
@@ -17,8 +18,17 @@ import { ProjectProps } from "./types";
 import { PillIcon } from "../../resources/enums";
 
 const Project: React.FC<ProjectProps> = props => {
+  const openURL = async (url: string, origin: string) => {
+    await Analytics.logEvent("ProjectButtonClicked", {
+      name: origin,
+      screen: "Projects"
+    });
+
+    Linking.openURL(url);
+  };
+
   return (
-    <ProjectArea onPress={() => Linking.openURL(props.url)}>
+    <ProjectArea onPress={() => openURL(props.url, props.title)}>
       <ProjectTitleArea>
         <ProjectTitleIconArea>
           {props.icon === PillIcon.github && (

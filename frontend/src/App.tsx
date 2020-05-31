@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Enumerable from "linq";
 import { ThemeProvider } from "styled-components";
+import ReactGA from "react-ga";
 
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -39,7 +40,15 @@ function App() {
     }
   };
 
-  useEffect(() => shuffleNewTheme(), []);
+  const initializeReactGA = () => {
+    ReactGA.initialize("G-9LX7R9LV5Q");
+    ReactGA.pageview("/");
+  };
+
+  useEffect(() => {
+    shuffleNewTheme();
+    initializeReactGA();
+  }, []);
 
   return (
     <ThemeProvider theme={randomTheme ? randomTheme : startPalette}>

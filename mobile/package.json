@@ -14,6 +14,8 @@
     "@use-expo/font": "^2.0.0",
     "expo": "~37.0.3",
     "expo-constants": "~9.0.0",
+    "expo-firebase-analytics": "~2.1.1",
+    "firebase": "^7.14.6",
     "i18next": "^19.4.4",
     "linq": "^3.2.2",
     "react": "~16.9.0",
