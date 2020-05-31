@@ -23,7 +23,9 @@
     },
     "android": {
       "package": "com.gustaandrade.gustavoandradedotdesign",
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./google-services.json",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gustaandrade.gustavoandradedotdesign",
+      "versionCode": 2
     },
     "web": {
       "config": {
