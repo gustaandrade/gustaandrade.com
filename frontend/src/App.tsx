@@ -41,7 +41,7 @@ function App() {
   };
 
   const initializeReactGA = () => {
-    ReactGA.initialize("G-9LX7R9LV5Q");
+    ReactGA.initialize("G-9LX7R9LV5Q", { standardImplementation: true });
     ReactGA.pageview("/");
   };
 
