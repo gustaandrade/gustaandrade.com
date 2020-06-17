@@ -1,13 +1,12 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "mobile",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
+    "name": "gustavoandrade.design",
+    "description": "@gustaandrade - Portfolio",
+    "slug": "gustavoandrade-dot-design",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
+    "githubUrl": "https://github.com/gustaandrade/gustavoandrade.design",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,11 +17,23 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.gustaandrade.gustavoandradedotdesign",
+      "googleServicesFile": "./google-services.json",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gustaandrade.gustavoandradedotdesign",
+      "versionCode": 2
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyBVPF5q-aRj4zzeHBuP5YtLyOKi95xxie8",
+          "measurementId": "G-9LX7R9LV5Q"
+        }
+      }
     }
   }
 }

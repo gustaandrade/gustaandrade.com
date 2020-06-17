@@ -1,9 +1,19 @@
 import styled from "styled-components/native";
+import Constants from "expo-constants";
 
-export const StyledView = styled.View`
-  background-color: papayawhip;
+import { ProjectProps } from "./types";
+
+export const Container = styled.View`
+  flex: 1;
+
+  background-color: ${(props: ProjectProps) => props.theme.Color1};
 `;
 
-export const StyledText = styled.Text`
-  color: palevioletred;
+export const ProjectScrollArea = styled.SafeAreaView`
+  flex: 1;
+  align-items: center;
+
+  padding-top: ${Constants.statusBarHeight + 20}px;
 `;
+
+export const ProjectScroll = styled.ScrollView``;

@@ -5,7 +5,6 @@ import { Dimensions } from "react-native";
 import { HomeProps } from "./types";
 
 export const Container = styled.View`
-  width: ${Dimensions.get("window").width}px;
   flex: 1;
 
   background-color: ${(props: HomeProps) => props.theme.Color1};
@@ -30,7 +29,7 @@ export const DescriptionArea = styled.View`
 `;
 
 export const SpecialtiesArea = styled.View`
-  flex: 0.5;
+  flex: 0.55;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -39,7 +38,7 @@ export const SpecialtiesArea = styled.View`
 
   border-radius: 50px;
 
-  margin: 15px;
+  margin: 15px 15px 0 15px;
   padding: 15px;
 `;
 
@@ -58,8 +57,18 @@ export const SpecialtiesIcon = styled.View`
 `;
 
 export const SocialArea = styled.View`
-  flex: 0.6;
-  justify-content: flex-start;
+  flex: 0.45;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: ${(props: HomeProps) => props.theme.Color2};
+
+  border-radius: 50px;
+
+  margin: 15px;
+  padding: 15px;
 `;
 
 export const SocialButton = styled.TouchableOpacity`
@@ -68,23 +77,29 @@ export const SocialButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: flex-start;
 
-  background-color: ${(props: HomeProps) => props.theme.Color2};
-  border-radius: 25px;
+  color: ${(props: HomeProps) => props.theme.Color4};
 
-  height: 50px;
+  border: 3px;
+  border-color: ${(props: HomeProps) => props.theme.Color3};
+  border-radius: 50px;
 
-  margin: 4px 15px;
+  width: 100%;
+  height: 60px;
+
+  margin: 0px 15px;
 `;
 
 export const SocialIcon = styled.View`
   align-items: flex-end;
-  width: 80px;
+  width: 65px;
   padding-right: 15px;
 `;
 
 export const SocialText = styled.Text`
   font-family: "Jost-Bold";
   font-size: 20px;
+
+  color: ${(props: HomeProps) => props.theme.Color4};
 `;
 
 export const AvatarImage = styled.Image`
@@ -140,4 +155,6 @@ export const RandomButton = styled.TouchableOpacity`
   background-color: ${(props: HomeProps) => props.theme.Color2};
   border-color: ${(props: HomeProps) => props.theme.Color3};
   border-width: 3px;
+
+  elevation: 10;
 `;

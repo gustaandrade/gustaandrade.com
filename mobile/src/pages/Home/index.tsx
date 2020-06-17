@@ -1,13 +1,10 @@
 import React from "react";
 import { Image } from "react-native";
-import {
-  FontAwesome,
-  FontAwesome5,
-  MaterialCommunityIcons
-} from "@expo/vector-icons";
+import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 import { withTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
+import * as Analytics from "expo-firebase-analytics";
 
 import i18n from "../../i18n";
 
@@ -37,11 +34,21 @@ import { HomeProps } from "./types";
 const Home: React.FC<HomeProps> = props => {
   const [t] = useTranslation(undefined, { i18n });
 
-  const openURL = (url: string) => {
+  const openURL = async (url: string, origin: string) => {
+    await Analytics.logEvent("SocialButtonClicked", {
+      name: origin,
+      screen: "Home"
+    });
+
     Linking.openURL(url);
   };
 
-  const shuffleTheme = () => {
+  const shuffleTheme = async () => {
+    await Analytics.logEvent("ThemeButtonClicked", {
+      name: "RandomTheme",
+      screen: "Home"
+    });
+
     if (props.changeCustomTheme) props.changeCustomTheme();
   };
 
@@ -133,42 +140,30 @@ const Home: React.FC<HomeProps> = props => {
       </SpecialtiesArea>
 
       <SocialArea>
+        <SpecialtiesRow>
+          <SpecialtiesTitle>{t(LanguageItems.Contacts)}</SpecialtiesTitle>
+        </SpecialtiesRow>
+
         <SocialButton
-          onPress={() => openURL("mailto:oi@gustavoandrade.design")}
+          onPress={() => openURL("https://gustavoandrade.design", "Portfolio")}
+        >
+          <SocialIcon>
+            <MaterialCommunityIcons
+              name="web"
+              size={36}
+              color={props.theme.Color3}
+            />
+          </SocialIcon>
+          <SocialText>gustavoandrade.design</SocialText>
+        </SocialButton>
+
+        <SocialButton
+          onPress={() => openURL("mailto:oi@gustavoandrade.design", "Email")}
         >
           <SocialIcon>
             <FontAwesome5 name="at" size={36} color={props.theme.Color3} />
           </SocialIcon>
           <SocialText>oi@gustavoandrade.design</SocialText>
-        </SocialButton>
-
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_linkedin")}>
-          <SocialIcon>
-            <FontAwesome5
-              name="linkedin"
-              size={36}
-              color={props.theme.Color3}
-            />
-          </SocialIcon>
-          <SocialText>/gustaandrade</SocialText>
-        </SocialButton>
-
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_github")}>
-          <SocialIcon>
-            <FontAwesome5 name="github" size={36} color={props.theme.Color3} />
-          </SocialIcon>
-          <SocialText>/gustaandrade</SocialText>
-        </SocialButton>
-
-        <SocialButton onPress={() => openURL("https://bit.ly/gusta_curriculo")}>
-          <SocialIcon>
-            <FontAwesome
-              name="file-pdf-o"
-              size={36}
-              color={props.theme.Color3}
-            />
-          </SocialIcon>
-          <SocialText>{t(LanguageItems.Curriculum)}</SocialText>
         </SocialButton>
       </SocialArea>
     </Container>

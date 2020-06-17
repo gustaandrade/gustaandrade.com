@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Emoji from "react-emoji-render";
 import { useTranslation } from "react-i18next";
+import ReactGA from "react-ga";
 
 import {
   Container,
@@ -26,11 +27,23 @@ const I18n: React.FC<I18nProps> = props => {
   function toggleLanguage(newLang: Language) {
     if (language === newLang) return;
 
+    ReactGA.event({
+      category: "I18n",
+      action: "Changed Language",
+      label: newLang
+    });
+
     setLanguage(newLang);
     i18n.changeLanguage(newLang);
   }
 
   function changePalette(value: string) {
+    ReactGA.event({
+      category: "Theme",
+      action: "Changed Palette",
+      label: value
+    });
+
     props.shuffleTheme(Palettes[parseInt(value, 10)]);
   }
 
@@ -41,10 +54,26 @@ const I18n: React.FC<I18nProps> = props => {
       autoCorrect={BlobLocation.smallMiddle.toString()}
     >
       <I18nContainer>
-        <Button onClick={() => toggleLanguage(Language.br)}>
+        <Button
+          onClick={() => toggleLanguage(Language.br)}
+          style={{
+            borderBottom:
+              language === Language.br
+                ? `3px solid ${props.currentPalette.Color3}`
+                : 0
+          }}
+        >
           <Emoji text=":flag_brazil:" onlyEmojiClassName="make-emojis-large" />
         </Button>
-        <Button onClick={() => toggleLanguage(Language.en)}>
+        <Button
+          onClick={() => toggleLanguage(Language.en)}
+          style={{
+            borderBottom:
+              language === Language.en
+                ? `3px solid ${props.currentPalette.Color3}`
+                : 0
+          }}
+        >
           <Emoji
             text=":flag_united_states:"
             onlyEmojiClassName="make-emojis-large"

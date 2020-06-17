@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
 
   min-width: 400px;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
 
   background-color: ${props => props.theme.Color2};
   border-radius: ${props => props.about};

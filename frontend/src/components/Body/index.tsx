@@ -20,30 +20,35 @@ const Body: React.FC = () => {
           icon={PillIcon.npm}
           description={t(LanguageItems.FirstProject)}
         />
+
         <Pill
           title="gamedev4noobs"
           url="https://github.com/gustaandrade/gamedev4noobs"
           icon={PillIcon.github}
           description={t(LanguageItems.SecondProject)}
         />
+
         <Pill
-          title="new-portfolio-mobile"
-          url="https://github.com/gustaandrade/new-portfolio"
+          title="gustavoandrade.design - mobile"
+          url="https://github.com/gustaandrade/gustavoandrade.design"
           icon={PillIcon.mobile}
           description={t(LanguageItems.ThirdProject)}
         />
+
         <Pill
-          title="new-portfolio"
-          url="https://github.com/gustaandrade/new-portfolio"
+          title="gustavoandrade.design - web"
+          url="https://github.com/gustaandrade/gustavoandrade.design"
           icon={PillIcon.react}
           description={t(LanguageItems.FourthProject)}
         />
+
         <Pill
           title="tomb-keeper"
           url="https://github.com/gustaandrade/global-game-jam-2020"
           icon={PillIcon.unity}
           description={t(LanguageItems.FifthProject)}
         />
+
         <Pill
           title="star-picross"
           url="https://github.com/gustaandrade/"

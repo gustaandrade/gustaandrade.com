@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import ReactGA from "react-ga";
 
 import {
   Container,
@@ -18,10 +19,10 @@ import {
 
 import Avatar from "../../assets/avatar.png";
 
-import { LanguageItems, BlobLocation } from "../../resources/enums";
+import { Language, LanguageItems, BlobLocation } from "../../resources/enums";
 
 const Profile: React.FC = () => {
-  const [t] = useTranslation();
+  const [t, i18n] = useTranslation();
 
   return (
     <Container>
@@ -43,9 +44,17 @@ const Profile: React.FC = () => {
         <SocialArea>
           <SocialColumn>
             <SocialLink
-              href="https://bit.ly/gusta_github"
+              href="https://github.com/gustaandrade"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.outboundLink(
+                  {
+                    label: "Github"
+                  },
+                  () => {}
+                );
+              }}
             >
               <SocialIcon viewBox="0 0 128 128">
                 <path
@@ -59,9 +68,17 @@ const Profile: React.FC = () => {
             </SocialLink>
 
             <SocialLink
-              href="https://bit.ly/gusta_linkedin"
+              href="https://linkedin.com/in/gustaandrade"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.outboundLink(
+                  {
+                    label: "Linkedin"
+                  },
+                  () => {}
+                );
+              }}
             >
               <SocialIcon viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
@@ -75,6 +92,14 @@ const Profile: React.FC = () => {
               href="mailto:oi@gustavoandrade.design"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.outboundLink(
+                  {
+                    label: "Email"
+                  },
+                  () => {}
+                );
+              }}
             >
               <SocialIcon viewBox="0 0 24 24">
                 <path d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z"></path>
@@ -83,9 +108,21 @@ const Profile: React.FC = () => {
             </SocialLink>
 
             <SocialLink
-              href="https://bit.ly/gusta_curriculo"
+              href={
+                i18n.language === Language.br
+                  ? "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
+                  : "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_EN.pdf"
+              }
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.outboundLink(
+                  {
+                    label: "Curriculum"
+                  },
+                  () => {}
+                );
+              }}
             >
               <SocialIcon viewBox="0 0 24 24">
                 <path d="M11.363 2c4.155 0 2.637 6 2.637 6s6-1.65 6 2.457v11.543h-16v-20h7.363zm.826-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z"></path>

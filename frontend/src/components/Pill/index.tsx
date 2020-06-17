@@ -1,5 +1,6 @@
 import React from "react";
 import { Markup } from "interweave";
+import ReactGA from "react-ga";
 
 import {
   Container,
@@ -14,7 +15,19 @@ import { PillProps } from "./types";
 
 const Pill: React.FC<PillProps> = props => {
   return (
-    <Container href={props.url} target="_blank" rel="noopener noreferrer">
+    <Container
+      href={props.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => {
+        ReactGA.outboundLink(
+          {
+            label: props.title
+          },
+          () => {}
+        );
+      }}
+    >
       <TitleArea>
         {props.icon === PillIcon.npm && (
           <PillImage viewBox="0 0 756 315">
