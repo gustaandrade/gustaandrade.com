@@ -27,7 +27,9 @@ const Experiences: React.FC<ExperiencesProps> = props => {
           <Experience
             title="Eshows"
             role={t(LanguageItems.FirstExperienceRole)}
-            period={`${t(LanguageItems.OCT)}/2019 - ${t(LanguageItems.Actual)}`}
+            period={`${t(LanguageItems.OCT)}/2019 - ${t(
+              LanguageItems.JUN
+            )}/2020`}
             description={t(LanguageItems.FirstExperience)}
           />
 

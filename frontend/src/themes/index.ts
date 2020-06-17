@@ -68,7 +68,7 @@ export const Palette1G: Palette = {
   Color2: "#00a0e8",
   Color3: "#787800",
   Color4: "#f8f858",
-  Banished: false
+  Banished: true
 };
 
 export const Palette1H: Palette = {

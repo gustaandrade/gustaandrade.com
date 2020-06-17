@@ -43,7 +43,7 @@ export const DescriptionRow = styled.View`
 `;
 
 export const SpecialtiesArea = styled.View`
-  flex: 0.4;
+  flex: 0.45;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -90,7 +90,7 @@ export const SpecialtiesIconRight = styled.View`
 `;
 
 export const SocialArea = styled.View`
-  flex: 0.6;
+  flex: 0.55;
 
   flex-direction: column;
   justify-content: space-around;

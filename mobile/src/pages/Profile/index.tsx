@@ -82,6 +82,20 @@ const Profile: React.FC<ProfileProps> = props => {
             <SpecialtiesIcon>
               <SpecialtiesIconLeft>
                 <MaterialCommunityIcons
+                  name="angular"
+                  size={30}
+                  color={props.theme.Color3}
+                />
+              </SpecialtiesIconLeft>
+
+              <SpecialtiesIconRight>
+                <SpecialtiesText>Angular</SpecialtiesText>
+              </SpecialtiesIconRight>
+            </SpecialtiesIcon>
+
+            <SpecialtiesIcon>
+              <SpecialtiesIconLeft>
+                <MaterialCommunityIcons
                   name="git"
                   size={30}
                   color={props.theme.Color3}
@@ -143,6 +157,20 @@ const Profile: React.FC<ProfileProps> = props => {
           </SpecialtiesColumn>
 
           <SpecialtiesColumn>
+            <SpecialtiesIcon>
+              <SpecialtiesIconLeft>
+                <FontAwesome5
+                  name="vuejs"
+                  size={30}
+                  color={props.theme.Color3}
+                />
+              </SpecialtiesIconLeft>
+
+              <SpecialtiesIconRight>
+                <SpecialtiesText>Vue</SpecialtiesText>
+              </SpecialtiesIconRight>
+            </SpecialtiesIcon>
+
             <SpecialtiesIcon>
               <SpecialtiesIconLeft>
                 <MaterialCommunityIcons
@@ -214,6 +242,20 @@ const Profile: React.FC<ProfileProps> = props => {
           </SpecialtiesColumn>
 
           <SpecialtiesColumn>
+            <SpecialtiesIcon>
+              <SpecialtiesIconLeft>
+                <Fontisto
+                  name="unreal-engine"
+                  size={28}
+                  color={props.theme.Color3}
+                />
+              </SpecialtiesIconLeft>
+
+              <SpecialtiesIconRight>
+                <SpecialtiesText>Unreal</SpecialtiesText>
+              </SpecialtiesIconRight>
+            </SpecialtiesIcon>
+
             <SpecialtiesIcon>
               <SpecialtiesIconLeft>
                 <FontAwesome5
