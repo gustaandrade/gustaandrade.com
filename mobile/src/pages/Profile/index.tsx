@@ -375,8 +375,8 @@ const Profile: React.FC<ProfileProps> = props => {
           onPress={() =>
             openURL(
               i18n.language === Language.br
-                ? "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_BR.pdf"
-                : "https://gustavoandrade.design/GustavoAndradeGuimaraes_CV_EN.pdf",
+                ? "https://gustaandrade.com/GustavoAndradeGuimaraes_CV_BR.pdf"
+                : "https://gustaandrade.com/GustavoAndradeGuimaraes_CV_EN.pdf",
               "Curriculum"
             )
           }

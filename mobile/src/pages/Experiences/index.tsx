@@ -25,62 +25,69 @@ const Experiences: React.FC<ExperiencesProps> = props => {
           <ExperienceTitle>{t(LanguageItems.Professional)}</ExperienceTitle>
 
           <Experience
-            title="Eshows"
+            title="Quicko"
             role={t(LanguageItems.FirstExperienceRole)}
-            period={`${t(LanguageItems.OCT)}/2019 - ${t(
-              LanguageItems.JUN
-            )}/2020`}
+            period={`${t(LanguageItems.JUL)}/2020 - ${t(LanguageItems.Actual)}`}
             description={t(LanguageItems.FirstExperience)}
           />
 
           <Experience
-            title="Fofuuu"
+            title="Eshows"
             role={t(LanguageItems.SecondExperienceRole)}
-            period={`${t(LanguageItems.JUL)}/2017 - ${t(
-              LanguageItems.OCT
-            )}/2019`}
+            period={`${t(LanguageItems.OCT)}/2019 - ${t(
+              LanguageItems.JUN
+            )}/2020`}
             description={t(LanguageItems.SecondExperience)}
           />
 
           <Experience
-            title="Hospital Margarida"
+            title="Fofuuu"
             role={t(LanguageItems.ThirdExperienceRole)}
-            period={`${t(LanguageItems.APR)}/2013 - ${t(
-              LanguageItems.MAR
-            )}/2014`}
+            period={`${t(LanguageItems.JUL)}/2017 - ${t(
+              LanguageItems.OCT
+            )}/2019`}
             description={t(LanguageItems.ThirdExperience)}
           />
 
           <Experience
-            title="Inforplay Informática"
+            title="Hospital Margarida"
             role={t(LanguageItems.FourthExperienceRole)}
+            period={`${t(LanguageItems.APR)}/2013 - ${t(
+              LanguageItems.MAR
+            )}/2014`}
+            description={t(LanguageItems.FourthExperience)}
+          />
+
+          <Experience
+            title="Inforplay Informática"
+            role={t(LanguageItems.FifthExperienceRole)}
             period={`${t(LanguageItems.OCT)}/2011 - ${t(
               LanguageItems.MAR
             )}/2013`}
-            description={t(LanguageItems.FourthExperience)}
+            description={t(LanguageItems.FifthExperience)}
           />
 
           <ExperienceTitle>{t(LanguageItems.Academic)}</ExperienceTitle>
 
           <Experience
             title="Universidade Anhembi Morumbi - UAM"
-            role={t(LanguageItems.FifthExperienceRole)}
-            period={`2014 - 2019`}
-            description={t(LanguageItems.FifthExperience)}
-          />
-
-          <Experience
-            title="Faculdade de Informática e Administração Paulista - FIAP"
             role={t(LanguageItems.SixthExperienceRole)}
-            period={`2014 - 2015`}
+            period={`2014 - 2019`}
             description={t(LanguageItems.SixthExperience)}
           />
 
           <Experience
-            title="Colégio e Faculdade Kennedy"
+            title="Faculdade de Informática e Administração Paulista - FIAP"
             role={t(LanguageItems.SeventhExperienceRole)}
-            period={`2010 - 2011`}
+            period={`2014 - 2015`}
             description={t(LanguageItems.SeventhExperience)}
+          />
+
+          <Experience
+            title="Colégio e Faculdade Kennedy"
+            role={t(LanguageItems.EighthExperienceRole)}
+            period={`2010 - 2011`}
+            description={t(LanguageItems.EighthExperience)}
           />
         </ExperiencesScroll>
       </ExperiencesScrollArea>

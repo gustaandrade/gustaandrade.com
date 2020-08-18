@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "gustavoandrade.design",
+    "name": "gustaandrade.com",
     "description": "@gustaandrade - Portfolio",
-    "slug": "gustavoandrade-dot-design",
+    "slug": "gustaandrade-dot-com",
     "privacy": "public",
     "platforms": ["ios", "android"],
-    "githubUrl": "https://github.com/gustaandrade/gustavoandrade.design",
-    "version": "1.1.0",
+    "githubUrl": "https://github.com/gustaandrade/gustaandrade.com",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -25,7 +25,7 @@
       "package": "com.gustaandrade.gustavoandradedotdesign",
       "googleServicesFile": "./google-services.json",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gustaandrade.gustavoandradedotdesign",
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
       "config": {
