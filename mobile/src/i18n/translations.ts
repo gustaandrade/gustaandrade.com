@@ -6,7 +6,7 @@ const Translations = {
       Profile: "Perfil",
       Projects: "Projetos",
       Options: "Opções",
-      Role: "Desenvolvedor Full Stack & de Jogos",
+      Role: "Desenvolvedor Web & Desenvolvedor de Jogos",
       Curriculum: "Currículo",
       Specialties: "Especialidades",
       CurrentPalette: "Paleta atual",
@@ -17,9 +17,9 @@ const Translations = {
       SecondProject:
         "O gamedev4noobs é um projeto inspirado nos projetos da comunidade He4rt Developers, onde projetos com a tag 4noobs concentram repositórios feitos e mantidos pela comunidade sobre diversos conteúdos da área da programação.\n\nEste em específico aborda o básico do desenvolvimento de um jogo, do zero até o deploy, usando diversas engines para ensinar e exemplificar os passos de criação de um jogo.",
       ThirdProject:
-        "Este portfólio também possui uma versão mobile. Essa versão mobile foi desenvolvida em React Native, usando o Expo como ferramenta de teste e desenvolvimento, além das ferramentas em comum com a versão web.\n\nVocê pode encontrar essa versão clicando no título, presente, por enquanto, apenas na Play Store.",
+        "Este portfólio possui uma versão web e mobile, que se complementam. A versão web foi desenvolvida usando React e TypeScript, e a versão mobile foi desenvolvida usando React Native e Expo, além dos pacotes styled-components e i18next em comum.\n\nA versão mobile está disponível para download, no momento, na Google Play.",
       FourthProject:
-        "Esse portfólio novo em versão web foi feito usando React e TypeScript.\n\nEntre os pacotes utilizados no desenvolvimento estão styled-components para a troca de paletas, I18Next para a internacionalização e Interweave para interpretar textos HTML.\n\nAs 36 paletas de cores presentes foram inspiradas nas paletas presentes no Super Game Boy para Super Nintendo.",
+        "gitstories é um projeto feito em React, utilizando TypeScript, cujo principal objetivo é demonstrar a busca de dados na API do Github de forma assíncrona.\n\nAo buscar um usuário do Github, o sistema lista as principais informações de perfil do usuário, como seus repositórios, detalhes desses projetos e informações de perfil.",
       FifthProject:
         "Você é o guardião do túmulo no cemitério da cidade. Durante a noite, coisas estranhas acontecem e muitos danos são causados ​​às lápides.\n\nVocê deve repará-las antes que os portões se abram na manhã seguinte, quando os visitantes chegam. Por quanto tempo você consegue manter o cemitério em boas condições?\n\nJogo feito no Unity, usando C#, para o Global Game Jam 2020.",
       SixthProject:
@@ -35,23 +35,26 @@ const Translations = {
       Academic: "Acadêmicas",
       Professional: "Profissionais",
       FirstExperience:
-        "Desenvolvedor Front-End responsável por desenvolver interfaces e soluções web de diversos sistemas da empresa, utilizando as tecnologias do ecossistema React, NextJS, Redux, Webpack, GraphQL e TypeScript.\n\nEm menor escala, atuando também no desenvolvimento e manutenção de produtos do backend que usam tecnologias como NodeJS, Nest e AWS.",
+        "Desenvolvedor Web responsável pela criação e manutenção de sistemas para a internet que se complementam com o aplicativo da Quicko, criando uma experiência completa para os usuários de transporte público e de mobilidade em geral, usando tecnologias como React, Angular, NodeJS, Wordpress, entre outras.",
       SecondExperience:
-        "Desenvolvedor de jogos usando a engine Unity e a linguagem C#, atuando no time de desenvolvimento e manutenção de três aplicativos Android e iOS, cujos jogos são ativados por voz e auxiliam o tratamento de crianças com dificuldades na fala.\n\nEm menor escala, atuando também na construção e manutenção de sistemas e páginas web da empresa, usando tecnologias como .NET, Razor, JavaScript e Wordpress.",
+        "Desenvolvedor Full Stack responsável pela criação e manutenção de sistemas web, utilizando tecnologias como React, NextJS, Redux, GraphQL, JavaScript e TypeScript. Em menor escala, atuando também no backend, com tecnologias como NodeJS, Nest e Docker.",
       ThirdExperience:
-        "Funcionário do setor de tecnologia do hospital, responsável por realizar operações estruturais, de hardware, software e rede pelos diferentes setores e equipamentos do estabelecimento.",
+        "Desenvolvedor de Jogos usando Unity e C#, atuando no time de desenvolvimento de 3 aplicativos Android e iOS, com jogos ativados pela voz para auxiliar no tratamento de crianças com problemas de fala. Em menor escala, atuando também como Scrum Master e em projetos usando .NET Core, Razor e Wordpress.",
       FourthExperience:
-        "Professor responsável por lecionar cursos de informática de níveis básicos e avançados dos softwares do pacote Office, Adobe, Corel Draw e manutenção de computadores.",
-      FifthExperience: "Bacharelado em Design de Games",
-      SixthExperience: "Técnico em Programação de Jogos Digitais",
-      SeventhExperience: "Técnico em Informática Gerencial",
-      FirstExperienceRole: "Desenvolvedor Front-End",
-      SecondExperienceRole: "Desenvolvedor Unity",
-      ThirdExperienceRole: "Estagiário de TI",
-      FourthExperienceRole: "Professor",
-      FifthExperienceRole: "",
+        "Estagiário de TI responsável por realizar operações estruturais, de hardware e software nos diferentes equipamentos do hospital.",
+      FifthExperience:
+        "Professor responsável por dar aula de cursos de informática de níveis básicos e avançados de pacotes Office, Adobe, Corel e manutenção.",
+      SixthExperience: "Bacharelado em Design de Games",
+      SeventhExperience: "Técnico em Programação de Jogos Digitais",
+      EighthExperience: "Técnico em Informática Gerencial",
+      FirstExperienceRole: "Desenvolvedor Web",
+      SecondExperienceRole: "Desenvolvedor Full Stack",
+      ThirdExperienceRole: "Desenvolvedor de Jogos",
+      FourthExperienceRole: "Estagiário de TI",
+      FifthExperienceRole: "Professor",
       SixthExperienceRole: "",
       SeventhExperienceRole: "",
+      EighthExperienceRole: "",
       Actual: "atual",
       JAN: "jan",
       FEB: "fev",
@@ -74,7 +77,7 @@ const Translations = {
       Profile: "Profile",
       Projects: "Projects",
       Options: "Options",
-      Role: "Full Stack & Game Developer",
+      Role: "Web Developer & Game Developer",
       Curriculum: "Resume",
       Specialties: "Specialties",
       CurrentPalette: "Current palette",
@@ -85,9 +88,9 @@ const Translations = {
       SecondProject:
         "gamedev4noobs is a project inspired by He4rt Developers community projects, where projects tagged 4noobs concentrate repositories made and maintained by the community on various contents involving the programming area.\n\nThis one specifically addresses the basics of game development, from scratch to deploy, using several engines to teach and exemplify the steps of creating a game.",
       ThirdProject:
-        "This portfolio also has a mobile version. This mobile version was developed in React Native, using Expo as a test and development tool, in addition to the other tools in common with the web version.\n\nYou can find this mobile version by clicking on the title, present, for now, only on the Play Store.",
+        "This portfolio has a web and mobile version, which complement each other. The web version was developed using React and TypeScript, and the mobile version was developed using React Native and Expo, in addition to the styled-components and i18next packages in common.\n\nThe mobile version is currently available for download only on Google Play.",
       FourthProject:
-        "This new portfolio was made using React and TypeScript.\n\nAmong the packages used in the development are styled-components for changing palettes, I18Next for internationalization and Interweave for interpreting HTML texts.\n\nThe 36 color palettes were inspired by the palettes present in the Super Game Boy for Super Nintendo.",
+        "gitstories is a project made in React, using TypeScript, whose main objective is to demonstrate the search for data in the Github API asynchronously.\n\nWhen searching for a Github user, the system lists the main user profile information, such as their repositories, details of these projects and profile information.",
       FifthProject:
         "You're the tomb keeper in the city's graveyard. During night, weird things happen and a lot of damage is done to the tombstones.\n\nYou must repair them before the gates open in the next morning, when the visitors arrive. For how long can you keep the graveyard in good conditions?\n\nGame made in Unit, using C#, for Global Game Jam 2020.",
       SixthProject:
@@ -103,23 +106,26 @@ const Translations = {
       Academic: "Academic",
       Professional: "Professional",
       FirstExperience:
-        "Front-end developer responsible for developing interfaces and web solutions for various company systems, using technologies from React ecossystem, such as NextJS, Redux, Webpack, GraphQL and TypeScript.\n\nIn a smaller scale, also acting in the development and maintenance of backend systems, using technologies like NodeJS, Nest and AWS.",
+        "Web developer responsible for creating and maintaining internet systems that complement the Quicko app, creating a complete experience for public transport and mobility users in general, using technologies such as React, Angular, NodeJS, Wordpress, among others.",
       SecondExperience:
-        "Game developer using the Unity engine and the C# language, working on the development and maintenance team of three Android and iOS applications, whose games are activated by voice and help the treatment of children with speech difficulties.\n\nIn a smaller scale, also acting in construction and maintenance of other systems and web pages of the company, using technologies such as .NET, Razor, JavaScript and Wordpress.",
+        "Full Stack developer responsible for creating and maintaining web systems, using technologies such as React, NextJS, Redux, GraphQL, JavaScript and TypeScript. On a smaller scale, also working on the backend, with technologies such as NodeJS, Nest and Docker.",
       ThirdExperience:
-        "Employee of the hospital's technology sector, responsible for carrying out structural, hardware, software and network operations for the different sectors and equipment.",
+        "Game developer using Unity and C#, working on the development team of 3 Android and iOS apps, with voice-activated games to help treat children with speech problems. On a smaller scale, also acting as Scrum Master and in projects using .NET Core, Razor and Wordpress.",
       FourthExperience:
-        "Professor responsible for teaching basic and advanced computer courses an array of sotware families, such as Office, Adobe, Corel Draw and computer maintenance.",
-      FifthExperience: "Bachelor in Game Design",
-      SixthExperience: "Digital Games Programming Technician",
-      SeventhExperience: "Managerial Computer Technician",
-      FirstExperienceRole: "Front-End Developer",
-      SecondExperienceRole: "Unity Developer",
-      ThirdExperienceRole: "Technology Intern",
-      FourthExperienceRole: "Professor",
-      FifthExperienceRole: "",
+        "IT intern responsible for performing structural, hardware and software operations on different hospital equipment.",
+      FifthExperience:
+        "Teacher responsible for teaching basic and advanced computer courses in Office, Adobe, Corel and PC maintenance.",
+      SixthExperience: "Bachelor in Game Design",
+      SeventhExperience: "Digital Games Programming Technician",
+      EighthExperience: "Managerial Computer Technician",
+      FirstExperienceRole: "Web Developer",
+      SecondExperienceRole: "Full Stack Developer",
+      ThirdExperienceRole: "Game Developer",
+      FourthExperienceRole: "Technology Intern",
+      FifthExperienceRole: "Professor",
       SixthExperienceRole: "",
       SeventhExperienceRole: "",
+      EighthExperienceRole: "",
       Actual: "currently",
       JAN: "jan",
       FEB: "feb",

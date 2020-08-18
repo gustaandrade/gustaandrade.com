@@ -32,15 +32,15 @@ const Projects: React.FC<ProjectProps> = props => {
           />
 
           <Project
-            title="gustavoandrade.design - web"
-            url="https://github.com/gustaandrade/gustavoandrade.design"
+            title="gitstories"
+            url="https://github.com/gustaandrade/gitstories"
             icon={PillIcon.react}
             description={t(LanguageItems.FourthProject)}
           />
 
           <Project
-            title="gustavoandrade.design - mobile"
-            url="https://github.com/gustaandrade/gustavoandrade.design"
+            title="gustaandrade.com"
+            url="https://github.com/gustaandrade/gustaandrade.com"
             icon={PillIcon.mobile}
             description={t(LanguageItems.ThirdProject)}
           />

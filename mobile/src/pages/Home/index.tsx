@@ -145,7 +145,7 @@ const Home: React.FC<HomeProps> = props => {
         </SpecialtiesRow>
 
         <SocialButton
-          onPress={() => openURL("https://gustavoandrade.design", "Portfolio")}
+          onPress={() => openURL("https://gustaandrade.com", "Portfolio")}
         >
           <SocialIcon>
             <MaterialCommunityIcons
@@ -154,16 +154,16 @@ const Home: React.FC<HomeProps> = props => {
               color={props.theme.Color3}
             />
           </SocialIcon>
-          <SocialText>gustavoandrade.design</SocialText>
+          <SocialText>gustaandrade.com</SocialText>
         </SocialButton>
 
         <SocialButton
-          onPress={() => openURL("mailto:oi@gustavoandrade.design", "Email")}
+          onPress={() => openURL("mailto:oi@gustaandrade.com", "Email")}
         >
           <SocialIcon>
             <FontAwesome5 name="at" size={36} color={props.theme.Color3} />
           </SocialIcon>
-          <SocialText>oi@gustavoandrade.design</SocialText>
+          <SocialText>oi@gustaandrade.com</SocialText>
         </SocialButton>
       </SocialArea>
     </Container>

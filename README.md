@@ -1,17 +1,17 @@
-# [gustavoandrade.design](https://gustavoandrade.design)
+# [gustaandrade.com](https://gustaandrade.com)
 
 <div align="center">
-  <img src="./assets/cover.png" alt="gustavoandrade.design">
+  <img src="./assets/cover.png" alt="gustaandrade.com">
 </div>
 
 <div align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/gustaandrade/gustavoandrade.design">
+  <img alt="GitHub" src="https://img.shields.io/github/license/gustaandrade/gustaandrade.com">
   &emsp;
   <img alt="Netlify" src="https://img.shields.io/netlify/fe122b17-19df-4605-8f15-200cdf56218f">
 </div>
 <br />
 
-Este repositório contém os códigos-fonte para as versões web e mobile do meu novo portfólio, [gustavoandrade.design](https://gustavoandrade.design).
+Este repositório contém os códigos-fonte para as versões web e mobile do meu novo portfólio, [gustaandrade.com](https://gustaandrade.com).
 
 ## Design
 
@@ -28,7 +28,7 @@ Que tal usar a possibilidade de troca de temas através do `styled-components` e
 ## Web
 
 <div align="center">
-  <img src="./assets/screenshot-site.png" alt="Main page of web page gustavoandrade.design">
+  <img src="./assets/screenshot-site.png" alt="Main page of web page gustaandrade.com">
 </div>
 <br />
 
@@ -39,15 +39,15 @@ A biblioteca `styled-components` foi usada para a construção do visual princip
 ## Mobile
 
 <div align="center">
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-1.jpg" height="370">
+  <img alt="Screenshot from gustaandrade.com app" src="./assets/screenshot-app-1.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-2.jpg" height="370">
+  <img alt="Screenshot from gustaandrade.com app" src="./assets/screenshot-app-2.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-3.jpg" height="370">
+  <img alt="Screenshot from gustaandrade.com app" src="./assets/screenshot-app-3.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-4.jpg" height="370">
+  <img alt="Screenshot from gustaandrade.com app" src="./assets/screenshot-app-4.jpg" height="370">
   &nbsp;
-  <img alt="Screenshot from gustavoandrade.design app" src="./assets/screenshot-app-5.jpg" height="370">
+  <img alt="Screenshot from gustaandrade.com app" src="./assets/screenshot-app-5.jpg" height="370">
 </div>
 <br />
 
